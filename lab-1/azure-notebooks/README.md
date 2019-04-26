@@ -9,7 +9,7 @@ Using [Azure Machine Learning SDK for Python](https://docs.microsoft.com/en-us/p
 
 The following diagram shows an example pipeline:
 
-![piplines](./images/01.png)
+![piplines](./images/pipelines.png)
 
 # Lab Overview
 The goal of this lab is to build a pipeline that demonstrate the basic data science workflow of data preparation, model training, and predictions. Azure Machine Learning, allows you to define distinct steps and make it possible to rerun only the steps you need as you tweak and test your workflow.
