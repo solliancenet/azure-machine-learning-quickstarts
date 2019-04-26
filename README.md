@@ -4,7 +4,7 @@ This repo contains labs that show how to use the Azure Machine Learning service 
 
 The following labs are available:
 - [Lab 0:](./lab-0/README.md) Setting up your environment. If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
-- [Lab 1:](./lab-1/README.md) Setup the Azure Machine Learning service from code and create AML pipelines.
-- [Lab 2:](./lab-2/README.md) Use the capabilities of the Azure Machine Learning service to interpret model predictions. 
-- [Lab 3:](./lab-3/README.md) Deep learning.
-- [Lab 4:](./lab-4/README.md) ONNX.
+- [Lab 1:](./lab-1/README.md) The goal of this lab is to build machine learning pipelines using Azure Machine Learning Python SDK that demonstrate the basic data science workflow of data preparation, model training, and predictions.
+- [Lab 2:](./lab-2/README.md) The goal of this lab is to show Model interpretability with Azure Machine Learning service. You will learn how to explain why your model made the prediction it made by using the Azure Machine Learning Interpretability SDK. 
+- [Lab 3:](./lab-3/README.md) In this lab you will train a deep learning model to classify the descriptions of car components as compliant or non-compliant. You will train the model on Azure Machine Learning Compute Cluster, download the trained model to your local computer, and make predictions.
+- [Lab 4:](./lab-4/README.md) In this lab your will convert a Deep Learning model you trained in [Lab 3](./lab-3/README.md) to ONNX format and deploy the ONNX model as a web service to make inferences. You will also measure the speed of the ONNX runtime for making inferences and compare the speed of ONNX with Keras for making inferences.
