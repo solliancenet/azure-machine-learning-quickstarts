@@ -22,7 +22,7 @@ The pipelines will be run on the Azure Machine Learning compute.
 
 ## Next Steps
 
-If you have not cloned this repository to your Azure notebooks on your local computer, do so now. All of the artifacts for this lab are located under `starter-artifacts/visual-studio-code`.
+If you have not cloned this repository onto your local computer, do so now. All of the artifacts for this lab are located under `starter-artifacts/visual-studio-code`.
 
 ### Open the starting Python file
 1. On your local computer expand the folder `01-aml-pipelines`.
