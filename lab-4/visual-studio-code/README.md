@@ -1,6 +1,6 @@
 # Technology overview
 
-## Interoperability with ONNX Models
+## Interoperability with ONNX
 The [Open Neural Network Exchange](https://onnx.ai/) (ONNX) format is an open standard for representing machine learning models. ONNX is supported by a [community of partners](https://onnx.ai/supported-tools), including Microsoft, who create compatible frameworks and tools. Microsoft is committed to open and interoperable AI so that data scientists and developers can:
 
 - Use the framework of their choice to create and train models
