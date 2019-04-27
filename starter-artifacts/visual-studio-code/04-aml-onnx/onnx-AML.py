@@ -1,8 +1,9 @@
 '''
-Train a deep learning model
-In this notebook you will train a deep learning model to classify the descriptions of car components as compliant or non-compliant. 
+Interoperability with ONNX
+
+In this lab, you will take a previously trained deep learning model to classify the descriptions of car components provided by technicians as compliant or non-compliant, convert the trained model to ONNX, and deploy the model as a web service to make inferences. The model was trained using Keras with Tensorflow backend. You will also measure the speed of the ONNX runtime for making inferences and compare the speed of ONNX with Keras for making inferences.
  
-Each document in the supplied training data set is a short text description of the component as documented by an authorized technician. 
+Each document in the supplied training and test data set is a short text description of the component as documented by an authorized technician. 
 The contents include:
 - Manufacture year of the component (e.g. 1985, 2010)
 - Condition of the component (poor, fair, good, new)
@@ -16,23 +17,11 @@ For example:
 * Good condition carbon fiber component manufactured in 2010 -> **Compliant**
 * Steel component manufactured in 1995 in fair condition -> **Non-Compliant**
 
-The labels present in this data are 0 for compliant, 1 for non-compliant.
+The labels present in the training data are 0 for compliant, 1 for non-compliant.
+'''
 
-The challenge with classifying text data is that deep learning models only undertand vectors (e.g., arrays of numbers) and not text. To encode the car component descriptions as vectors, we use an algorithm from Stanford called [GloVe (Global Vectors for Word Representation)](https://nlp.stanford.edu/projects/glove/). GloVe provides us pre-trained vectors that we can use to convert a string of text into a vector. 
 
-Setup
-To begin, you will need to provide the following information about your Azure Subscription. 
-
-In the following cell, be sure to set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region` as directed by the comments (*these values can be acquired from the Azure Portal*). Also provide the values for the pre-created AKS cluster (`aks_resource_group_name` and `aks_cluster_name`). 
-
-If you are in doubt of any of these values, do the following:
-1. Navigate to the Azure Portal and login with the credentials provided.
-2. From the left hand menu, under Favorites, select `Resource Groups`.
-3. In the list, select the resource group with the name similar to `tech-immersion-onnx-XXXXX`.
-4. From the Overview tab, capture the desired values.
-
-Execute the following cell by selecting the `>|Run` button in the command bar above.
-
+'''
 Create the Azure Machine Learning resources
 
 The Azure Machine Learning SDK provides a comprehensive set of a capabilities that you can use directly within a notebook including:
@@ -43,7 +32,7 @@ The Azure Machine Learning SDK provides a comprehensive set of a capabilities th
 - Packaging a Docker **Image** that contains everything your trained model needs for scoring (prediction) in order to run as a web service.
 - Deploying your Image to either Azure Kubernetes or Azure Container Instances, effectively hosting the **Web Service**.
 
-In Azure Notebooks, all of the libraries needed for Azure Machine Learning are pre-installed. To use them, you just need to import them. Run the following cell to do so:
+In Azure Notebooks, all of the libraries needed for Azure Machine Learning are pre-installed. To use them, you just need to import them. Run the following cell to import libraries required for this lab:
 '''
 
 # In[17]:
@@ -61,6 +50,24 @@ from keras import layers
 from keras import optimizers
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
+
+
+'''
+Setup
+To begin, you will need to provide the following information about your Azure Subscription. 
+
+In the following cell, be sure to set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region` as directed by the comments (*these values can be acquired from the Azure Portal*). Also provide the values for the pre-created AKS cluster (`aks_resource_group_name` and `aks_cluster_name`). 
+
+If you are in doubt of any of these values, do the following:
+1. Navigate to the Azure Portal and login with the credentials provided.
+2. From the left hand menu, under Favorites, select `Resource Groups`.
+3. In the list, select the resource group with the name similar to `tech-immersion-onnx-XXXXX`.
+4. From the Overview tab, capture the desired values.
+
+Execute the following cell by selecting the "Run Cell" just above the cell code block.
+'''
+
+#%%
 
 #Provide the Subscription ID of your existing Azure subscription
 subscription_id = "xxx-xxx-xxx"
@@ -80,6 +87,13 @@ glove_url = "https://databricksdemostore.blob.core.windows.net/data/connected-ca
 
 # this is the URL to the CSV file containing the care component descriptions
 data_url = "https://databricksdemostore.blob.core.windows.net/data/connected-car/connected-car_components.csv"
+
+
+'''
+Load the test data
+
+Execute the following two cells to restore the test data
+'''
 
 # Load the car components labeled data
 # In[20]:
