@@ -14,19 +14,9 @@ The following sections describe the setup process for each environment.
 
 # Quickstart: Azure Notebooks
 
-The quickest way to get going with the labs is upload the files in Azure Notebooks. 
+1. Please follow the 5 steps outlined in [Azure Notebooks Setup Page](./azure-notebooks-setup) before continuing. 
 
-1. You can sign up for a free account with [Azure Notebooks](https://notebooks.azure.com/).
-
-2. Create a new project in Azure Notebooks called “Aml-quickstarts”.
-
-3. Create one folder for each lab in your project:  01-aml-pipelines, 02-aml-interpretability, 03-aml-deep-learning, 04-aml-onnx.
-
-4. From starter-artifacts navigate to the [python-notebooks](../starter-artifacts/python-notebooks) link and load the files for each of the labs in their respective folders in your Azure Notebook project. You may have to download the files first to your local computer and then upload them to Azure notebooks. Also remember to maintain any folder structure within each of the labs. For example, the 04-aml-onnx lab has the notebook file “onnx-AML.ipynb” at the root and it has one subfolder called “model” that contains a pretrained model file.
-
-5. To run a lab, you can start your project to run on “Free Compute”. Set Python 3.6 as your kernel for your notebooks. You can also configure Azure Notebooks to run on a Deep Learning Virtual Machine (DLVM). In the Azure Notebooks project, you can configure the notebooks to run on Direct Compute by providing the credentials for Azure Notebooks to connect to the DLVM compute target.
-
-6. Next, follow the steps as outlined for each of labs.
+2. Once the setup is done, you can then follow the steps as outlined for each of labs.
 
 # Quickstart: Visual Studio Code
 
