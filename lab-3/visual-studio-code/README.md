@@ -45,7 +45,7 @@ If you have not cloned this repository onto your local computer, do so now. All 
 
 ### Open the starting Python file
 1. On your local computer expand the folder `03-aml-deep-learning`.
-2. To run a lab, open Visual Studio Code and open the file `deep-learning-with-AML.py`.
+2. To run a lab, open Visual Studio Code by double clicking the starting python file: `deep-learning-with-AML.py`.
 3. Confirm that your have setup `azure_automl` as your interpreter.
 4. `deep-learning-with-AML.py` is the Python file you will step thru executing in this lab.
 5. To execute each step click on `Run Cell` just above the block of code. 
