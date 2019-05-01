@@ -23,13 +23,13 @@ There are five steps to setting up your Azure Notebooks Environment
 
 3. Select the Create button at the bottom to be taken into a wizard.
 
-4. The wizard used to create the DLVM requires inputs for each of the four steps enumerated on the right of this figure. It is important that you select Linux as your OS type for DLVM.
+4. The wizard used to create the DLVM requires inputs for each of the four steps enumerated on the right of this figure. It is important that you select **Linux** as your OS type for DLVM.
 
 
 ![Create DLVM Step 1](./images/setup_vm/create_vm_1.png)
 
 
-5. Select your VM size: Standard NC6
+5. Select your VM size: **Standard NC6**
 
 
 ![Create DLVM Step 2](./images/setup_vm/create_vm_2.png)
