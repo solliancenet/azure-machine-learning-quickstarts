@@ -25,8 +25,8 @@ If you have not cloned this repository to your Azure notebooks under the project
 1. Within Azure Notebook, under `My Projects` open the project `Aml-quickstarts`. 
 2. In the project expand the folder `04-aml-onnx`.
 3. Confirm that there is a subfolder called `model` that contains a pretrained model file `model.h5`.
-4. To run a lab, you can start your project to run on “Free Compute”.
+4. To run a lab, you can start your project to run on the DLVM you created as part of setup in `lab-0`.
 5. Open `onnx-AML.ipynb`. This is the Python notebook you will step thru executing in this lab.
-6. Confirm that Python 3.6 is set as your kernel for your notebook.
+6. Confirm that `Python 3.6 – AzureML` is set as your kernel for your notebook.
 
 ### Follow the instructions within the notebook to complete the lab
