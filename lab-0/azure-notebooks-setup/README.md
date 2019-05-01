@@ -44,7 +44,7 @@ There are five steps to setting up your Azure Notebooks Environment
 
 1. Obtain the public IP address `xx.xxx.xxx.xx` of the DLVM from Azure Portal.
 
-2. Log into Jupyter hub using the URL: https://xx.xxx.xxx.xx:8000/hub/login
+2. Log into Jupyter hub running on the DLVM using the URL: https://xx.xxx.xxx.xx:8000/hub/login
 
 ![Jupyter Hub Login](./images/setup_vm/hub_login.png)
 
