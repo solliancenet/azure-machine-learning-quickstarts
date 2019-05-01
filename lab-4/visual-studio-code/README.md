@@ -24,7 +24,7 @@ If you have not cloned this repository onto your local computer, do so now. All 
 ### Open the starting Python file
 1. On your local computer expand the folder `04-aml-onnx`.
 2. Confirm that there is a subfolder called `model` that contains a pretrained model file `model.h5`.
-3. To run a lab, open Visual Studio Code and open the file `onnx-AML.py`.
+3. To run a lab, open Visual Studio Code by double clicking the starting python file: `onnx-AML.py`.
 4. Confirm that your have setup `azure_automl` as your interpreter.
 5. `onnx-AML.py` is the Python file you will step thru executing in this lab.
 6. To execute each step click on `Run Cell` just above the block of code. 
