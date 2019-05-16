@@ -73,10 +73,10 @@ Execute the following cell by selecting the "Run Cell" just above the cell code 
 subscription_id = "xxx-xxx-xxx"
 
 #Provide values for the existing Resource Group 
-resource_group = "Deep-Learning-Lablet"
+resource_group = "Onnx-Lablet"
 
 #Provide the Workspace Name and Azure Region of the Azure Machine Learning Workspace
-workspace_name = "deep-learning-workspace"
+workspace_name = "onnx-workspace"
 workspace_region = "eastus"
 
 deployment_folder = './deploy'
@@ -173,28 +173,20 @@ In the steps that follow, you will convert Keras model you just trained to the O
 - Windows apps
 - IoT devices
 
-Converting a Keras model requires the use of the `winmltools`, `onnx` and `protobuf` libraries. Run the following cell to install these.
+Convert the model to ONNX by running the following cell.
 '''
 
 # In[23]:
-get_ipython().run_cell_magic('sh', '', 'pip install protobuf\npip install onnx\npip install winmltools')
+import onnxmltools
 
-
-# Convert the model to ONNX by running the following cell.
-
-# In[24]:
-import winmltools
-
-# create a deployment folder in the current directory
-os.makedirs(deployment_folder, exist_ok=True)
-
-# create an onnx subfolder under deployment
-os.makedirs(os.path.join(deployment_folder, onnx_export_folder), exist_ok=True)
-
+# Convert the Keras model to ONNX
 onnx_model_name = 'component_compliance.onnx'
-converted_model = winmltools.convert_keras(model, target_opset=7)
-winmltools.save_model(converted_model, 
-                      os.path.join(os.path.join(deployment_folder, onnx_export_folder), onnx_model_name))
+converted_model = onnxmltools.convert_keras(model, onnx_model_name)
+
+# Save the model locally...
+onnx_model_path = os.path.join(deployment_folder, onnx_export_folder)
+os.makedirs(onnx_model_path, exist_ok=True)
+onnxmltools.utils.save_model(converted_model, os.path.join(onnx_model_path,onnx_model_name))
 
 '''
 The above cell created a new file called `component_compliance.onnx` that contains the ONNX version of the model. 
@@ -340,16 +332,13 @@ get_ipython().run_cell_magic('writefile', '$deployment_folder/scoring-service.py
 
 '''
 Next, create your Workspace (or retrieve the existing one if it already exists) and deploy the model as a web service.
-Before you run the cell, modify the value of the `service_name` parameter to replace `YOUR-UNIQUE-IDENTIFIER` so that it includes your identifier.
-Run the cell to perform the deployment.
+Run the next two cell to perform the deployment.
 '''
 
-# In[34]:
-# It is important to change the current working directory so that your generated scoring-service.py is at the root of it. 
-# This is required by the Azure Machine Learning SDK
-os.chdir(deployment_folder)
-
 # In[35]:
+import logging
+logging.getLogger("adal-python").setLevel(logging.WARN)
+
 ws =  getOrCreateWorkspace(subscription_id, resource_group, 
                    workspace_name, workspace_region)
 
@@ -359,25 +348,28 @@ from azureml.core.webservice import Webservice
 
 webservice_name = "complianceservice-zst"
 
+# It is important to change the current working directory so that your generated scoring-service.py is at the root
+# This is required by the Azure Machine Learning SDK
+os.chdir(deployment_folder)
+
 webservice = None
 for service in Webservice.list(ws):
     if (service.name == webservice_name):
         webservice = service
         print(webservice.name, webservice)
 
-# Deploy the Model as a WebService
-
-# In[37]:
 if webservice == None:
     print(os.getcwd())
     webservice = deployModelAsWebService(ws, model_folder_path=onnx_export_folder, 
                                      model_name="component_compliance", service_name = webservice_name)
 
+# Change the directory back...
+os.chdir('../')
 
 # Finally, test your deployed web service.
 # In[55]:
 # choose a sample from the test data set to send
-test_sample = x_test.astype(np.float32)[1502]
+test_sample = np.reshape(x_test.astype(np.float32)[1502], (1,100))
 test_sample_json = json.dumps(test_sample.tolist())
 
 # invoke the web service
