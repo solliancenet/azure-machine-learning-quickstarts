@@ -87,3 +87,7 @@
 - Navigate to the `Compute` tab and delete your compute target: `auto-ml-compute`
 
 <img src="./images/013_DeleteCompute.png" width="70%" height="70%">
+
+## Step 12: Proceed to Part 2
+
+- [Automated ML with Azure ML Python SDK[(../)
