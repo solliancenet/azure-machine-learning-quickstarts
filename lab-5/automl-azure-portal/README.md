@@ -90,4 +90,4 @@
 
 ## Step 12: Proceed to Part 2
 
-- [Automated ML with Azure ML Python SDK[(../)
+- [Automated ML with Azure ML Python SDK](../README.md)
