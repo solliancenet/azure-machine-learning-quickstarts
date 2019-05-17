@@ -62,8 +62,28 @@
 
 ## Step 8: Review Experiment Run Results
 
+- The experiment will run for about 5-10 min
+- Observe the model performance for the primary metric for different iterations
+- Scroll down to see a table view of different iterations
+- Click on the iteration with the best **spearman_correlation** score
+
+<img src="./images/09_ReviewRunDetails_1.png" width="70%" height="70%">
+<img src="./images/010_ReviewRunDetails_2.png" width="70%" height="70%">
+
 ## Step 9: Review Best Model Predictions
+
+- Review **Predicted Taxi Fare vs True Taxi Fare** for your best model
+
+<img src="./images/011_ReviewPredictions.png" width="70%" height="70%">
 
 ## Step 10: Review Best Model Metrics
 
+- Scroll down to review various performance metrics for your best model
+
+<img src="./images/012_ReviewMetrics.png" width="70%" height="70%">
+
 ## Step 11: Clean-up
+
+- Navigate to the `Compute` tab and delete your compute target: `auto-ml-compute`
+
+<img src="./images/013_DeleteCompute.png" width="70%" height="70%">
