@@ -90,4 +90,4 @@
 
 ## Step 12: Proceed to Part 2
 
-- [Automated ML with Azure ML Python SDK](../lab-5)
+- [Automated ML with Azure ML Python SDK](../../lab-5)
