@@ -23,16 +23,42 @@
 - Select your VM size
 - Provide `Additional Settings`
 - Click on **Create**
+- Wait for Compute to be ready
+- Click on **Next**
 
 <img src="./images/04_CreateNewCompute.png" width="70%" height="70%">
 
 ## Step 4: Upload Training Data
 
+- Click on **Upload**
+- Upload `nyc-taxi-sample-data.csv` from your local disk
+
+<img src="./images/05_UploadDataFile.png" width="70%" height="70%">
+
 ## Step 5: Review Training Data
+
+- Click on **nyc-taxi-sample-data.csv**
+- Review your training data. Scroll to right to observe the target column: `totalAmount`
+
+<img src="./images/06_ReviewDataFile.png" width="70%" height="70%">
 
 ## Step 6: Setup AutoML Experiment Basic Settings
 
-## Step 7: Setup AutoML Experiment Advanced Settings
+- Select Prediction Task **Regression**
+- Select Target column: **totalAmount**
+- Click on **Advanced Settings**
+
+<img src="./images/07_SetupExp_1.png" width="70%" height="70%">
+
+## Step 7: Setup AutoML Experiment Advanced Settings and Run Experiment
+
+- Select Primary metric **spearman_correlation**
+- Select Max number of iterations: **3**
+- Select Number of Cross Validations: **5**
+- Select Max concurrent iterations: **1**
+- Scroll down and click on **Start** to run the experiment
+
+<img src="./images/08_SetupExp_2.png" width="70%" height="70%">
 
 ## Step 8: Review Experiment Run Results
 
