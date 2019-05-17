@@ -62,7 +62,7 @@
 
 ## Step 8: Review Experiment Run Results
 
-- The experiment will run for about 5-10 min
+- The experiment will run for about *5-10 min*
 - Observe the model performance for the primary metric for different iterations
 - Scroll down to see a table view of different iterations
 - Click on the iteration with the best **spearman_correlation** score
