@@ -4,9 +4,27 @@
 
 ## Step 1: Navigate to Automated Machine Learning in Azure Portal
 
+- Navigate to the machine learning workspace: `auto-ml-demo`
+- Select `Automated machine learning` in the left navigation bar
+- Click on **Create Experiment**
+
+<img src="./images/02_CreateExperiment.png" width="70%" height="70%">
+
 ## Step 2: Create Experiment
 
+- Provide an experiment name: `auto-ml-exp`
+- Click on **Create a new compute**
+
+<img src="./images/03_NewExperiment_1.png" width="70%" height="70%">
+
 ## Step 3: Create New Compute
+
+- Provide compute name: `auto-ml-compute`
+- Select your VM size
+- Provide `Additional Settings`
+- Click on **Create**
+
+<img src="./images/04_CreateNewCompute.png" width="70%" height="70%">
 
 ## Step 4: Upload Training Data
 
