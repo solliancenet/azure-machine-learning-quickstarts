@@ -24,7 +24,8 @@ Please complete Part 1 before Part 2.
 
 ## Part 1: Automated ML in Azure Portal
 
-- [AutoML in Azure Portal](./automl-azure-portal/README.md)
+- Download the training data file [nyc-taxi-sample-data.csv](../starter-artifacts/python-notebooks/05-aml-automl/data) on your local disk
+- Follow instructions at: [AutoML in Azure Portal](./automl-azure-portal/README.md)
 
 ## Part 2: Automated ML with Azure ML Python SDK
 
