@@ -1,20 +1,20 @@
 # Lab 0: Setting up your environment 
 
-If a lab environmnet has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
+If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
 
-The following summarizes the lab requirements if you want to setup your own environment (for example, on your local machine). If this is your first time peforming these labs, it is highly recommended you follow the Quick Start instructions below rather that setup your own environment from scratch.
+The following summarizes the lab requirements when you want to setup your own environment (for example, on your local machine). If this is your first time performing these labs, it is highly recommended you follow the Quick Start instructions below rather that setup your own environment from scratch.
 
 The labs have the following requirements:
 - Azure subscription. You will need a valid and active Azure account to complete this Azure lab. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/en-us/free/).
-- One of the following environments:
-    - Azure Notebooks
-    - Visual Studio Code
+- An environment, which can by any of the following:
+    - [Azure Notebooks](https://notebooks.azure.com/)
+    - [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
     
 The following sections describe the setup process for each environment.
 
 # Quickstart: Azure Notebooks
 
-1. Please follow the 5 steps outlined in [Azure Notebooks Setup Page](./azure-notebooks-setup) before continuing. 
+1. Please follow the 5 steps outlined in [Azure Notebooks Setup](./azure-notebooks-setup) before continuing. 
 
 2. Once the setup is done, you can then follow the steps as outlined for each of labs.
 
