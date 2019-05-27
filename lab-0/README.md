@@ -12,6 +12,25 @@ The labs have the following requirements:
     
 The following sections describe the setup process for each environment.
 
+# Azure Quotas Required
+The quickstarts depend on the capability to utilize a certain quantity of Azure resources, for which your Azure subscription will need to have sufficient quota available. 
+
+The following are the specific quotas required, if your subscription does not meet the quota requirements in the region in which you will perform the quickstarts, you will need to request a quota increase thru Azure support:
+
+Compute-VM
+- Quota: Standard NC Family vCPU
+- Provider: Microsoft.Compute
+- SKU family: NC Promo Series
+- Required Limit: 24
+
+Compute-VM
+- Quota: Total Regional vCPUs
+- Provider: Microsoft.Compute
+- SKU family: Dv2 Series
+- Required Limit: 8
+
+
+
 # Quickstart: Azure Notebooks
 
 1. Please follow the 5 steps outlined in [Azure Notebooks Setup](./azure-notebooks-setup) before continuing. 
