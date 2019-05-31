@@ -1,4 +1,4 @@
-# Lab 0: Setting up your environment 
+# Setting up your environment 
 
 If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
 
