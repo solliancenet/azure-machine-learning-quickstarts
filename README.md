@@ -1,6 +1,6 @@
-# Azure Machine Learning Quickstarts Labs
+# Azure Machine Learning Service Quickstart
 
-This repo contains labs that show how to use the Azure Machine Learning service with the Python SDK. Each lab provides instructions for you to preform them using the environment of your choice - Azure Notebooks or Visual Studio Code.
+[Azure Machine Learning Service](https://docs.microsoft.com/en-us/azure/machine-learning/service/overview-what-is-azure-ml) is a cloud service for machine learning that support training, deploying, and managing models in Azure using Python SDK and CLI. Azure Machine Learning service also provides a visual interface (preview) to quickly, prepare data, and train machine learning models. The following set of quickstarts demonstrate a key set of Azure Machine Learning Services and provides instructions for you to preform them using the environment of your choice - Azure Notebooks or Visual Studio Code.
 
 The following labs are available:
 - [Lab 0:](./lab-0/README.md) Setting up your environment. If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
@@ -9,3 +9,7 @@ The following labs are available:
 - [Lab 3:](./lab-3/README.md) In this lab you will train a deep learning model to classify the descriptions of car components as compliant or non-compliant. You will train the model on Azure Machine Learning Compute Cluster, download the trained model to your local computer, and make predictions.
 - [Lab 4:](./lab-4/README.md) In this lab your will convert a Deep Learning model you trained in [Lab 3](./lab-3/README.md) to ONNX format and deploy the ONNX model as a web service to make inferences. You will also measure the speed of the ONNX runtime for making inferences and compare the speed of ONNX with Keras for making inferences.
 - [Lab 5:](./lab-5/README.md) This lab is divided into two parts. In the first part, you learn how to create, run, and explore automated machine learning experiments in the Azure portal without a single line of code. In the second part, you will evaluate, register, and deploy the model you trained in the first part using the Azure ML Python SDK.
+
+# Azure Machine Learning Studio Quickstart
+
+[Azure Machine Learning Studio](https://docs.microsoft.com/en-us/azure/machine-learning/studio/) gives you a cloud-based interactive, visual workspace that you can use to easily and quickly build, test, and deploy models using pre-built machine learning algorithms. Machine Learning Studio also publishes models as web services that can easily be consumed by other applications. To use Azure Machine Learning Studio, you do not need programming experience and following Quickstart will walk you through an exercise that will show how to process training data, create a model, train, score, and evaluate the model and finally deploy the trained model as a web service.
