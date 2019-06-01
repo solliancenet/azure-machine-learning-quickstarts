@@ -47,6 +47,6 @@ Azure Machine Learning Visual Interface gives you a cloud-based interactive, vis
 
 If a lab environment has not be provided for you, this provides the instructions to get started in your own Azure Subscription.
 
-### 1. [Azure Machine Learning Visual Interface](./lab-1/README.md)
+### 7. [Azure Machine Learning Visual Interface](./lab-1/README.md)
 
 The goal of this quickstart is to build machine learning pipelines using Azure Machine Learning Python SDK that demonstrate the basic data science workflow of data preparation, model training, and predictions.
