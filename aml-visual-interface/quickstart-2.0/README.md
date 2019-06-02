@@ -60,4 +60,4 @@ Create Kubernetes Service compute as shown:
 <img src="./images/03.png" width="70%" height="70%" title="Create Kubernetes Service Compute">
 
 
-## Next, follow the steps as outlined for quickstart [Azure Machine Learning Visual Interface](./aml-visual-interface/quickstart-2.1/README.md)
+## Next, follow the steps as outlined for quickstart [Azure Machine Learning Visual Interface](../aml-visual-interface/quickstart-2.1/README.md)
