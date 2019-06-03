@@ -2,6 +2,8 @@
 
 - Create an Azure Machine Learning service workspace named: `auto-ml-demo`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
 
+- Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws9073123377.blob.core.windows.net/azureml-blobstore-0d1c4218-a5f9-418b-bf55-902b65277b85/quickstarts/nyc-taxi-data/nyc-taxi-sample-data.csv) on your local disk
+
 ## Step 1: Navigate to Automated Machine Learning in Azure Portal
 
 - Navigate to the machine learning workspace: `auto-ml-demo`
