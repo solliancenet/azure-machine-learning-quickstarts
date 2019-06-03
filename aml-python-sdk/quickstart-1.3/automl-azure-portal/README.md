@@ -1,6 +1,6 @@
 # Prerequisites
 
-- If an environment is provided to you. Use the workspace named: quick-starts-ws-XXXXX, where XXXXX is your unique identifier.
+- If an environment is provided to you. Use the workspace named: `quick-starts-ws-XXXXX`, where `XXXXX` is your unique identifier.
 
 - If you are using your own Azure subscription. Create an Azure Machine Learning service workspace named: `quick-starts-ws`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
 
@@ -16,7 +16,7 @@
 
 ## Step 2: Create Experiment
 
-- Provide an experiment name: `auto-ml-exp` (please make a note, the experiment name has to be the same in part 2)
+- Provide an experiment name: `auto-ml-exp`
 - Click on **Create a new compute**
 
 <img src="./images/03_NewExperiment_1.png" width="70%" height="70%">
