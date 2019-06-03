@@ -1,12 +1,14 @@
 # Prerequisites
 
-- Create an Azure Machine Learning service workspace named: `auto-ml-demo`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
+- If an environment is provided to you. Use the workspace named: quick-starts-ws-XXXXX, where XXXXX is your unique identifier.
 
-- Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws9073123377.blob.core.windows.net/azureml-blobstore-0d1c4218-a5f9-418b-bf55-902b65277b85/quickstarts/nyc-taxi-data/nyc-taxi-sample-data.csv) on your local disk
+- If you are using your own Azure subscription. Create an Azure Machine Learning service workspace named: `quick-starts-ws`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
+
+- Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws9073123377.blob.core.windows.net/azureml-blobstore-0d1c4218-a5f9-418b-bf55-902b65277b85/quickstarts/nyc-taxi-data/nyc-taxi-sample-data.csv) on your local disk.
 
 ## Step 1: Navigate to Automated Machine Learning in Azure Portal
 
-- Navigate to the machine learning workspace: `auto-ml-demo`
+- Navigate to the machine learning workspace: `quick-starts-ws-XXXXX` or `quick-starts-ws`
 - Select `Automated machine learning` in the left navigation bar
 - Click on **Create Experiment**
 
@@ -14,7 +16,7 @@
 
 ## Step 2: Create Experiment
 
-- Provide an experiment name: `auto-ml-exp`
+- Provide an experiment name: `auto-ml-exp` (please make a note, the experiment name has to be the same in part 2)
 - Click on **Create a new compute**
 
 <img src="./images/03_NewExperiment_1.png" width="70%" height="70%">
