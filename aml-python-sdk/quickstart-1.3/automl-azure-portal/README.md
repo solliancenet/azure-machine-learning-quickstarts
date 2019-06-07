@@ -114,7 +114,7 @@
 - Click on **Create Image**
 - On the `Create an Image` page provide the information as shown below. Note that you should upload the corresponding script files downloaded in step # 13.
 - Click on **Create** button.
-- Creating an image can take upto 5-10 minutes. Wait for the image creating before proceeding.
+- Creating an image can take upto 5-10 minutes. Wait for the image to be created before proceeding.
 
 <img src="./images/017_CreateImage_1.png" width="70%" height="70%" title="Click on Create Image">
 
@@ -124,7 +124,7 @@
 
 - Navigate to the `Images` section in your Azure Portal Workspace.
 - Select the image created in step #14
-- Confirm that the image creating succeeded.
+- Confirm that the image creation succeeded.
 - Click on **Create Deployment**
 - On the `Create Deployment` page provide the information as shown below. We will deploy the scoring web service on an Azure Container Instance (ACI).
 - Click on **Create** button.
@@ -139,7 +139,7 @@
 
 ## Step 16: Clean-up
 
-- We are done using the `Compute` and thus we can free the compute resource
+- We are done using the `Compute` resource.
 - Navigate to the `Compute` tab and delete your compute target: `auto-ml-compute`
 
 <img src="./images/013_DeleteCompute.png" width="70%" height="70%">
