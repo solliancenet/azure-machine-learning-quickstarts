@@ -2,7 +2,7 @@
 # 
 # **Please complete Part 1 before continuing**
 # 
-# In this part, you will test, register, and deploy the model you trained in the first part using the Azure ML Python SDK.
+# In this part, you will access the deployed webservice from Part 1 using the Azure ML Python SDK, and then test the scoring web service: (1) by make direct calls on service object, (2) by calling the service end point (Scoring URI) over http.
 
 # In[ ]:
 
@@ -57,6 +57,7 @@ ws = Workspace.get(
     name = workspace_name,
     subscription_id = subscription_id,
     resource_group = resource_group)
+print('Workspace configuration succeeded')
 
 
 # ## Access the Deployed Webservice from the Workspace
