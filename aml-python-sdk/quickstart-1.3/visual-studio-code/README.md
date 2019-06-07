@@ -8,4 +8,4 @@ If you have not cloned this repository onto your local computer, do so now. Foll
 3. `automl-with-AML.py` is the Python file you will step thru executing in this quickstart.
 4. To execute each step click on `Run Cell` just above the block of code. 
 
-### Follow the instructions within the python file to complete the lab
+### Follow the instructions within the python file to complete the quickstart
