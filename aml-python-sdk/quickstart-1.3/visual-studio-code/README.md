@@ -1,6 +1,6 @@
 ## Setting up your environment
 
-If you have not cloned this repository onto your local computer, do so now. Follow instructions in `quickstart-1.0` to properly setup your environment. The notebook for this quickstart is located in folder: `starter-artifacts->python-notebooks->03-aml-automl`.
+If you have not cloned this repository onto your local computer, do so now. Follow instructions in `quickstart-1.0` to properly setup your environment. The python file for this quickstart is located in folder: `starter-artifacts->visual-studio-code->03-aml-automl`.
 
 ### Open the starting Python file
 1. To run this quickstart, start Visual Studio Code and open the starting python file: `automl-with-AML.py`.
