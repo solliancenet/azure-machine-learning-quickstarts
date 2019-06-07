@@ -146,4 +146,4 @@
 
 ## Step 17: Proceed to Part 2
 
-- [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-1-automated-ml-with-azure-ml-python-sdk)
+- [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-2-automated-ml-with-azure-ml-python-sdk)
