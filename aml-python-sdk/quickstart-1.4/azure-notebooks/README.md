@@ -1,13 +1,12 @@
 # Technology overview
 
 ## Deep Learning with Azure Machine Learning service
-Using the [main Python SDK](https://docs.microsoft.com/python/api/overview/azure/ml/intro?view=azure-ml-py) and the [Data Prep SDK](https://docs.microsoft.com/python/api/overview/azure/dataprep/intro?view=azure-dataprep-py) for Azure Machine Learning as well as open-source Python packages, you can build and train highly accurate machine learning and deep-learning models yourself in an Azure Machine Learning service Workspace. You can choose from many machine learning components available in open-source Python packages, such as the following examples:
+Using the [Azure Machine Learning SDK for Python](https://docs.microsoft.com/python/api/overview/azure/ml/intro?view=azure-ml-py) and the [Data Prep SDK](https://docs.microsoft.com/python/api/overview/azure/dataprep/intro?view=azure-dataprep-py) for Azure Machine Learning as well as open-source Python packages, you can build and train highly accurate machine learning and deep-learning models yourself in an Azure Machine Learning service Workspace. You can choose from many machine learning components available in open-source Python packages, such as the following examples:
 
 - [Scikit-learn](https://scikit-learn.org/stable/)
 - [Tensorflow](https://www.tensorflow.org/)
 - [PyTorch](https://pytorch.org/)
-- [CNTK](https://www.microsoft.com/en-us/cognitive-toolkit/)
-- [MXNet](https://mxnet.incubator.apache.org/)
+- [Keras](https://keras.io/)
 
 After you have a model, you use it to create a container, such as Docker, that can be deployed locally for testing. After testing is done, you can deploy the model as a production web service in either Azure Container Instances or Azure Kubernetes Service. For more information, see the article on [how to deploy and where](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where).
 
@@ -17,8 +16,8 @@ For deep neural network (DNN) training using TensorFlow, Azure Machine Learning 
 
 The TensorFlow Estimator also enables you to train your models at scale across CPU and GPU clusters of Azure VMs. You can easily run distributed TensorFlow training with a few API calls, while Azure Machine Learning will manage behind the scenes all the infrastructure and orchestration needed to carry out these workloads.
 
-# Lab Overview
-In this lab you will learn how to leverage Deep Learning technologies to scan through their vehicle specification documents to find compliance issues with new regulations.
+# Quickstart Overview
+In this quickstart you will learn how to leverage Deep Learning technologies to scan through their vehicle specification documents to find compliance issues with new regulations.
 
 Each document in the supplied training data set is a short text description of the component as documented by an authorized technician.
 
@@ -39,15 +38,12 @@ The labels present in this data are 0 for compliant, 1 for non-compliant.
 
 The challenge with classifying text data is that deep learning models only undertand vectors (e.g., arrays of numbers) and not text. To encode the car component descriptions as vectors, we use an algorithm from Stanford called [GloVe (Global Vectors for Word Representation)](https://nlp.stanford.edu/projects/glove/). GloVe provides us pre-trained vectors that we can use to convert a string of text into a vector. 
 
-## Next Steps
+## Before you begin
 
-If you have not cloned this repository to your Azure notebooks under the project `Aml-quickstarts`, do so now. All of the artifacts for this lab are located under `starter-artifacts/python-notebooks`.
+Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0/azure-notebooks-setup) for Azure Notebooks before you begin.
 
-### Open the starting Python Notebook
-1. Within Azure Notebook, under `My Projects` open the project `Aml-quickstarts`. 
-2. In the project expand the folder `03-aml-deep-learning`.
-3. To run a lab, you can start your project to run on the DLVM you created as part of setup in `lab-0`.
-4. Open `deep-learning-with-AML.ipynb`. This is the Python notebook you will step thru executing in this lab.
-5. Confirm that `Python 3.6 – AzureML` is set as your kernel for your notebook.
+## Open Notebook for this Quickstart
+1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->04-aml-deep-learning`. 
+2. Open `deep-learning-with-AML.ipynb`. This is the Python notebook you will step thru executing in this lab.
 
 ### Follow the instructions within the notebook to complete the lab
