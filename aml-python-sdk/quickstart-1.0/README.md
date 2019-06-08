@@ -29,13 +29,11 @@ Compute-VM
 - SKU family: Dv2 Series
 - Required Limit: 8
 
-
-
 # Quickstart: Azure Notebooks
 
-1. Please follow the 5 steps outlined in [Azure Notebooks Setup](./azure-notebooks-setup) before continuing. 
+1. Please follow the steps outlined in [Azure Notebooks Setup](./azure-notebooks-setup) before continuing. 
 
-2. Once the setup is done, you can then follow the steps as outlined for each of labs.
+2. Once the setup is done, you can then follow the steps as outlined for each of other quickstarts.
 
 # Quickstart: Visual Studio Code
 
@@ -45,12 +43,18 @@ Compute-VM
 
 3. Setup a new conda environment for Azure Auto ML. The easiest way to do that is to download the automl_setup script for your machine (Windows-automl_setup.cmd, Linux-automl_setup_linux.sh, Mac-automl_setup_mac.sh) and the common automl_env.yml file from the following [GitHub repository](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning). Open command prompt or terminal and go to the directory where the two files are saved and run the script file. The script will creates a new conda environment called azure_automl, and installs the necessary packages.
 
-4. From starter-artifacts navigate to the [visual-studio-code](../starter-artifacts/visual-studio-code) and download the project files to your local computer. Also remember to maintain the folder structure within each of the labs. For example, the 04-aml-onnx lab has the python file “onnx-AML.py” at the root and it has one subfolder called “model” that contains a pretrained model file.
+4. From starter-artifacts navigate to the [visual-studio-code](../starter-artifacts/visual-studio-code) and download the project files to your local computer. Also remember to maintain the folder structure as shown in `starter-artifacts/visual-studio-code`, so that each quickstart’s starting python file is in its own folder. During the quickstarts , other files will be either downloaded or created, thus maintaining the folder structure will help keeping the files within their respective quickstart folders. 
 
 5. On your local computer, configure VS code to be the default editor for python files.
 
-6. When you open the starting python file for a lab: (a) please first ensure that VS code is not running, (b) open the starting python file in VS code by double clicking on the file. This will ensure that the current working directory for the lab will be same as the directory of the starting python file. 
+6. When you are ready to start a quickstart, open the starting python file by double clicking on the file. This will ensure that the current working directory for the quickstart will be same as the directory of the starting python file. 
 
 7. In VS code, when you first open the starting python file for a lab, use Select Interpreter command from the Command Palette (⇧⌘P) and select the azure_automl as your interpreter.
 
-8. Next, follow the steps as outlined for each of labs.
+## Open the starting Python file
+
+1. On your local computer expand the folder `00-aml-setup`.
+2. Open Visual Studio Code by double clicking the starting python file: `00-aml-setup.py`.
+3. Confirm that you have setup azure_automl as your interpreter.
+4. To execute each step click on Run Cell just above the block of code.
+5. Follow the instructions within the python file to complete the quickstart.
