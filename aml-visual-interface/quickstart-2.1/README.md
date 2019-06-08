@@ -133,7 +133,7 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 <img src="./images/11_1.png" width="70%" height="70%" title="Go to Run History" border="15">
 
-<img src="./images/11_2.png" width="70%" height="70%" title="Go back to the experiment" border="15">
+<img src="./images/11_2.png" width="70%" height="70%" title="Go back to the experiment">
 
 ## Step 12: Save the Trained Model
 
