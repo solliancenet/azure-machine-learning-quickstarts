@@ -1,10 +1,10 @@
 # Setting up your environment 
 
-If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
+If a lab environment has not be provided for you, this quickstart provides the instructions to get started in your own Azure Subscription.
 
-The following summarizes the lab requirements when you want to setup your own environment (for example, on your local machine). If this is your first time performing these labs, it is highly recommended you follow the Quick Start instructions below rather that setup your own environment from scratch.
+The following summarizes the requirements when you want to setup your own environment (for example, on your local machine). If this is your first time performing these labs, it is highly recommended you follow the Quick Start instructions below rather that setup your own environment from scratch.
 
-The labs have the following requirements:
+The quickstarts have the following requirements:
 - Azure subscription. You will need a valid and active Azure account to complete this Azure lab. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/en-us/free/).
 - An environment, which can by any of the following:
     - [Azure Notebooks](https://notebooks.azure.com/)
@@ -49,7 +49,7 @@ Compute-VM
 
 6. When you are ready to start a quickstart, open the starting python file by double clicking on the file. This will ensure that the current working directory for the quickstart will be same as the directory of the starting python file. 
 
-7. In VS code, when you first open the starting python file for a lab, use Select Interpreter command from the Command Palette (⇧⌘P) and select the azure_automl as your interpreter.
+7. In VS code, when you first open the starting python file for a quickstart, use Select Interpreter command from the Command Palette (⇧⌘P) and select the azure_automl as your interpreter.
 
 ## Open the starting Python file
 
