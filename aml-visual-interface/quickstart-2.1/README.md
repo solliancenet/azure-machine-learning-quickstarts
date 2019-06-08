@@ -49,7 +49,11 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 9. Select `Replace with mean` as `Cleaning mode` in the right panel
 10. Click on **Edit columns** in the right panel
 11. Exclude the two non-numeric data columns `normalizeHolidayName` and `isPaidTimeOff`
-12. Split the data for training and evaluation using the **Split Data** module
+12. Expand **Data Transformation, Sample and Split** in the left navigation and add the **Split Data** module 
+13. Connect the `left output` from `Clean Missing Data` module to the `Split Data` module
+14. Select the **Split Data** module and set `0.7` as the fraction of rows in first output
+
+*Note that you can run the experiment at any point to peek at the outputs and activities. Running experiments also generates metadata that is available for downstream activities such selecting column names from a list in selection dialogs.*
 
 <img src="./images/04_1.png" width="70%" height="70%" title="Select Columns in Dataset Module" border="15">
 
@@ -59,7 +63,7 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 <img src="./images/04_4.png" width="70%" height="70%" title="Exclude non-numeric columns" border="15">
 
-<img src="./images/04_4.png" width="70%" height="70%" title="Split Data Module" border="15">
+<img src="./images/04_5.png" width="70%" height="70%" title="Split Data Module" border="15">
 
 ## Step 5: Initialize your Regression Model
 
