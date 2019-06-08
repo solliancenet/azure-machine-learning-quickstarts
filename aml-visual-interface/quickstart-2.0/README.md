@@ -46,7 +46,15 @@ Navigate to your workspace and select `Compute` from the `Assets` section and cl
 
 ### Step 2
 
-Create a Machine Learning Compute named `qs-compute` as shown:
+Create a Machine Learning Compute named `qs-compute` as follows:
+
+1. Compute name: `qs-compute`
+2. Compute type: `Machine Learning Compute`
+3. Region: Select `your region`
+4. Virtual machine size: `Standard_D2_v2`
+5. Minimum number of nodes: `1`
+6. Maximum number of nodes: `1`
+7. Click on **Create**
 
 <img src="./images/02.png" width="70%" height="70%" title="Create a Machine Learning Compute">
 
@@ -55,7 +63,14 @@ Create a Machine Learning Compute named `qs-compute` as shown:
 
 Next, we will create a Kubernetes Service Compute to publish the trained model as web service.
 
-Create Kubernetes Service compute as shown:
+Create Kubernetes Service compute as follows:
+
+1. Compute name: `nyc-taxi`
+2. Compute type: `Kubernetes Service`
+3. Region: `Select your region`
+4. Virtual machine size: `Standard_D3_v2`
+5. Number of nodes: `3`
+6. Click on **Create**
 
 <img src="./images/03.png" width="70%" height="70%" title="Create Kubernetes Service Compute">
 
