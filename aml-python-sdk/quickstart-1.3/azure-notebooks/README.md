@@ -5,6 +5,5 @@ Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.
 ### Open the starting Python Notebook
 1. Within Azure Notebook, navigate to: `aml-python-sdk->starter-artifacts->python-notebooks->03-aml-automl`. 
 2. Open `automl-with-AML.ipynb`. This is the Python notebook you will step thru executing in this quickstart.
-3. Confirm that `Python 3.6` is set as your kernel for your notebook.
 
 ### Follow the instructions within the notebook to complete the quickstart
