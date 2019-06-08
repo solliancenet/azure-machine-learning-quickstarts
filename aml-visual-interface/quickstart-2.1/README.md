@@ -4,18 +4,18 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 1: Navigate to Visual Interface in Azure Portal
 
-- Navigate to the machine learning workspace: `quick-starts-ws`
-- Select `Visual interface` in the left navigation bar
-- Click on **Launch visual interface**
+1. Navigate to the machine learning workspace: `quick-starts-ws`
+2. Select `Visual interface` in the left navigation bar
+3. Click on **Launch visual interface**
 
 <img src="./images/01.png" width="70%" height="70%" title="Launch visual interface" border="15">
 
 ## Step 2: Upload Training Dataset
 
-- Click on **+ New**
-- Select **Datasets**
-- Click on **Upload from Local File**
-- Navigate to `nyc-taxi-sample-data.csv` on your local disk and click **Ok**
+1. Click on **+ New**
+2. Select **Datasets**
+3. Click on **Upload from Local File**
+4. Navigate to `nyc-taxi-sample-data.csv` on your local disk and click **Ok**
 
 <img src="./images/02_1.png" width="70%" height="70%" title="Click on + New" border="15">
 
@@ -25,10 +25,10 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 3: Create New Blank Experiment and Select your Dataset
 
-- Click on **+ New**
-- Select **+ Blank Experiment**
-- Expand **My Datasets** in the left navigation
-- Drag and drop your dataset `nyc-taxi-sample-data.csv` on to the canvas
+1. Click on **+ New**
+2. Select **+ Blank Experiment**
+3. Expand **Saved Datasets, My Datasets** in the left navigation
+4. Drag and drop your dataset `nyc-taxi-sample-data.csv` on to the canvas
 
 <img src="./images/03_1.png" width="70%" height="70%" title="Click on + Blank Experiment" border="15">
 
@@ -38,18 +38,18 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 4: Transform your data
 
-- Open **Data Transformation** section in the left panel
-- Drag and drop **Select Columns in Dataset** module on to the canvas
-- Select the added `Select Columns in Dataset` module
-- Click on **Edit columns** in the right panel
-- Exclude the column name `vendorID` from your dataset
-- Add **Clean Missing Data** module
-- Sequentially connect the three modules
-- Select the added  `Clean Missing Data` module
-- Select `Replace with mean` as `Cleaning mode` in the right panel
-- Click on **Edit columns** in the right panel
-- Exclude the two non-numeric data columns `normalizedHolidayName` and `isPaidTimeOff`
-- Split the data for training and evaluation using the **Split Data** module
+1. Open **Data Transformation, Manipulation section** section in the left panel
+2. Drag and drop **Select Columns in Dataset** module on to the canvas
+3. Select the added `Select Columns in Dataset` module
+4. Click on **Edit columns** in the right panel
+5. Select **Begin With All Columns** and then in the drop down select **Exclude**. Enter the column name `vendorID` in the textbox.
+6. Add **Clean Missing Data** module
+7. Sequentially connect the three modules
+8. Select the added  `Clean Missing Data` module
+9. Select `Replace with mean` as `Cleaning mode` in the right panel
+10. Click on **Edit columns** in the right panel
+11. Exclude the two non-numeric data columns `normalizeHolidayName` and `isPaidTimeOff`
+12. Split the data for training and evaluation using the **Split Data** module
 
 <img src="./images/04_1.png" width="70%" height="70%" title="Select Columns in Dataset Module" border="15">
 
