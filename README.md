@@ -24,20 +24,19 @@ Placeholder...
 
 ### 1.3 [Automated Machine Learning](./aml-python-sdk/quickstart-1.3/README.md)
 
-This quickstart is divided into two parts. In the first part, you learn how to create, run, and explore automated machine learning experiments in the Azure portal without a single line of code. In the second part, you will evaluate, register, and deploy the model you trained in the first part using the Azure ML Python SDK.
+In this quickstart, you will learn how to create, train, evaluate, and deploy automated machine learning models in the Azure portal without a single line of code.
 
 ### 1.4 [Deep Learning with Azure Machine Learning](./aml-python-sdk/quickstart-1.4/README.md)
 
-In this quickstart you will train a deep learning model to classify the descriptions of car components as compliant or non-compliant. You will train the model on Azure Machine Learning Compute Cluster, download the trained model to your local computer, and make predictions.
+In this quickstart, you will train a deep learning model to classify the descriptions of car components as compliant or non-compliant. You will train the model on Azure Machine Learning Compute Cluster, download the trained model to your local computer, and make predictions.
 
 ### 1.5 [Creating ONNX models with Azure Machine Learning](./aml-python-sdk/quickstart-1.5/README.md)
 
-In this quickstart your will convert a Deep Learning model you trained in [quickstart-1.4](./aml-python-sdk/quickstart-1.4/README.md) to ONNX format and deploy the ONNX model as a web service to make inferences. You will also measure the speed of the ONNX runtime for making inferences and compare the speed of ONNX with Keras for making inferences.
+In this quickstart, your will convert a Deep Learning model you trained in [quickstart-1.4](./aml-python-sdk/quickstart-1.4/README.md) to ONNX format and deploy the ONNX model as a web service to make inferences. You will also measure the speed of the ONNX runtime for making inferences and compare the speed of ONNX with Keras for making inferences.
 
 ### 1.6 [Model Interpretability with Azure Machine Learning](./aml-python-sdk/quickstart-1.6/README.md)
 
-The goal of this quickstart is to show Model interpretability with Azure Machine Learning service. You will learn how to explain why your model made the prediction it made by using the Azure Machine Learning Interpretability SDK. 
-
+The goal of this quickstart is to show Model interpretability with Azure Machine Learning service. You will learn how to explain why your model made the prediction it made by using the Azure Machine Learning Interpretability SDK. You will learn to understand both global and local explainability of your model. Finally, you will also learn how to deploy the explainer along with the model to be used at scoring time to make predictions and provide local explanations.
 
 ## 2. Azure Machine Learning Visual Interface
 
