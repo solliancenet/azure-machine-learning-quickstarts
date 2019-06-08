@@ -50,7 +50,7 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 10. Click on **Edit columns** in the right panel
 11. Exclude the two non-numeric data columns `normalizeHolidayName` and `isPaidTimeOff`
 12. Expand **Data Transformation, Sample and Split** in the left navigation and add the **Split Data** module 
-13. Connect the `left output` from `Clean Missing Data` module to the `Split Data` module
+13. Connect the first output from `Clean Missing Data` module to the `Split Data` module
 14. Select the **Split Data** module and set `0.7` as the fraction of rows in first output
 
 *Note that you can run the experiment at any point to peek at the outputs and activities. Running experiments also generates metadata that is available for downstream activities such selecting column names from a list in selection dialogs.*
@@ -67,18 +67,18 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 5: Initialize your Regression Model
 
-- Open **Machine Learning -> Initialize Model -> Regression** section in the left panel
-- Add the **Boosted Decision Tree Regression** module on to the canvas
-- Configure your model parameters
+1. Expand **Machine Learning, Initialize Model, Regression** section in the left panel
+2. Add the **Boosted Decision Tree Regression** module on to the canvas
+3. Configure your model parameters: `Minimum number of samples per node: 1` and `Learning rate: 0.1`
 
 <img src="./images/05_1.png" width="70%" height="70%" title="Boosted Decision Tree Regression Module"  border="15">
 
 ## Step 6: Setup Train Model Module
 
-- Open **Machine Learning -> Train** section in the left panel
-- Add **Train Model** module on to the canvas
-- Click on **Edit columns** in the right panel to setup your `Label or Target column`
-- Select `totalAmount` as your target column
+1. Expand **Machine Learning, Train** section in the left panel
+2. Add **Train Model** module on to the canvas
+3. Click on **Edit columns** in the right panel to setup your `Label or Target column`
+4. Select `totalAmount` as your target column
 
 <img src="./images/06_1.png" width="70%" height="70%" title="Train Model Module"  border="15">
 
@@ -86,13 +86,17 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 7: Setup Score Model and Evaluate Model Modules
 
-- Open **Machine Learning -> Score** section in the left panel
-- Add **Score Model** module on to the canvas
-- Complete the model training and scoring connections
-- Note that `Split Data` module will feed data for both model training and model scoring
-- Open **Machine Learning -> Evaluate** section in the left panel
-- Add **Evaluate Model** module on to the canvas
-- Connect the `Score Model` module to `Evaluate Model` module
+1. Expand **Machine Learning, Score** section in the left panel
+2. Add **Score Model** module on to the canvas
+3. Complete the model training and scoring connections
+  - Connect the `Boosted Decision Tree Regression` module to `Train Model` module
+  - Connect the `Train Model` module to the first input of the `Score Model` module
+  - Connect the first output of `Split Data` module to `Train Model` module
+  - Connect the second output of `Split Data` module to the second input of the `Score Model` module
+4. Note that `Split Data` module will feed data for both model training and model scoring. The first output (0.7 fraction) will connect with the `Train Model` module and the second output (0.3 fraction) will connect with the `Score Model` module.
+5. Open **Machine Learning, Evaluate** section in the left panel
+6. Add **Evaluate Model** module on to the canvas
+7. Connect the `Score Model` module to `Evaluate Model` module
 
 <img src="./images/07_1.png" width="70%" height="70%" title="Score Model Module"  border="15">
 
