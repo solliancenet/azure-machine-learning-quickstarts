@@ -104,11 +104,11 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 8: Run the Experiment
 
-- Click on **Run**
-- Note that you can create a new **Compute Target** directly from **Visual Interface**
-- Select the existing compute target we created upfront in `quickstart-2.0`
-- Click on **Run**
-- The experiment will run for about 8-10 minutes 
+1. Click on **Run**
+2. Note that you can create a new **Compute Target** directly from **Visual Interface**
+3. Select the existing compute target we created upfront in `quickstart-2.0`
+4. Click on **Run**
+5. The experiment will run for about 8-10 minutes 
 
 <img src="./images/08_1.png" width="70%" height="70%" title="Click on Run Experiment"  border="15">
 
@@ -116,10 +116,10 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 9: Visualize the Model Predictions
 
-- Wait for model training to be complete
-- Right click on **Score Model** module and select **Scored dataset -> Visualize**
-- Compare the predicted `predicted taxi fares` to the `target taxi fares`
-- You can also observe the predicted value distribution when you select the `Scored Labels` column 
+1. Wait for model training to be complete
+2. Right click on **Score Model** module and select **Scored dataset -> Visualize**
+3. Compare the predicted `predicted taxi fares` to the `target taxi fares`
+4. You can also observe the predicted value distribution when you select the `Scored Labels` column 
  
 <img src="./images/09_1.png" width="70%" height="70%" title="Visualize the Model Predictions" border="15">
 
@@ -127,8 +127,8 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 10: Visualize the Evaluation Results
 
-- Right click on **Evaluate Model** module and select **Evaluation results -> Visualize**
-- Observe the Model Evaluation Metrics such as **Root Mean Squared Error**
+1. Right click on **Evaluate Model** module and select **Evaluation results -> Visualize**
+2. Observe the Model Evaluation Metrics such as **Root Mean Squared Error**
 
 <img src="./images/10_1.png" width="70%" height="70%" title="Visualize the Model Evaluation" border="15">
 
@@ -136,8 +136,8 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 11: Experiment Run History
 
-- Click on **Run History**
-- Go back to the Experiment by clicking on the `Editable` version of the Run History
+1. Click on **Run History**
+2. Go back to the Experiment by clicking on the `Editable` version of the Run History
 
 <img src="./images/11_1.png" width="70%" height="70%" title="Go to Run History" border="15">
 
@@ -145,8 +145,8 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 12: Save the Trained Model
 
-- Right click on the `Train Model` module and select **Trained model -> Save as Trained Model**
-- Save the Trained Model
+1. Right click on the `Train Model` module and select **Trained model -> Save as Trained Model**
+2. Save the Trained Model
 
 <img src="./images/12_1.png" width="70%" height="70%" title="Right click on the Train Model module" border="15">
 
@@ -154,11 +154,11 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 13: Run Predictive Experiment
 
-- Observe the saved model appears in the `Trained Models` section
-- Click on **Create Predictive Experiment**
-- Click on **Run**
-- Select the existing compute target to run the experiment
-- It will take about 4-5 minutes to run the predictive experiment
+1. Observe the saved model appears in the `Trained Models` section
+2. Click on **Create Predictive Experiment**
+3. Click on **Run**
+4. Select the existing compute target to run the experiment
+5. It will take about 4-5 minutes to run the predictive experiment
 
 <img src="./images/13_1.png" width="70%" height="70%" title="Create Predictive Experiment" border="15">
 
@@ -166,8 +166,8 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 14: Deploy Web Service
 
-- Click on **Deploy Web Service**
-- Select the existing Kubernetes Service compute, and click **Deploy**
+1. Click on **Deploy Web Service**
+2. Select the existing Kubernetes Service compute, and click **Deploy**
 
 <img src="./images/14_1.png" width="70%" height="70%" title="Deploy Web Service" border="15">
 
@@ -175,9 +175,9 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 15: Test the Deployed Web Service
 
-- Navigate to the Web Services section of the Visual Interface, and open the web service
-- Fill in the data to predict with your web service, and click **Test**
-- Observed the **Raw** test results and predicted output **Scored Labels**
+1. Navigate to the Web Services section of the Visual Interface, and open the web service
+2. Fill in the data to predict with your web service, and click **Test**
+3. Observed the **Raw** test results and predicted output **Scored Labels**
 
 <img src="./images/15_1.png" width="70%" height="70%" title="Open the Web Service" border="15">
 
@@ -185,17 +185,17 @@ Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws
 
 ## Step 16: Review how to Consume the Deployed Web Service
 
-- Navigate to the **Consume** section of the Web Service
-- Observe the provided sample code in C#, Python, and R to consume the Web Service
+1. Navigate to the **Consume** section of the Web Service
+2. Observe the provided sample code in C#, Python, and R to consume the Web Service
 
 <img src="./images/16_1.png" width="70%" height="70%" title="Consume the Deployed Web Service" border="15">
 
 ## Step 17: Cleanup Resources
 
-- Go to Azure Portal and navigate to the Deployments section of the workspace
-- **Delete** the deployed Web Service
-- Navigate to **Compute** section
-- **Delete** both the compute targets created for this quickstart - one at a time
+1. Go to Azure Portal and navigate to the Deployments section of the workspace
+2. **Delete** the deployed Web Service
+3. Navigate to **Compute** section
+4. **Delete** both the compute targets created for this quickstart - one at a time
 
 <img src="./images/17_1.png" width="70%" height="70%" title="Delete the deployed Web Service" border="15">
 
