@@ -23,7 +23,7 @@ Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.
 
 ## Open Notebook for this Quickstart
 1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->05-aml-onnx`. 
-2. Open `onnx-AML.ipynb`. This is the Python notebook you will step thru executing in this lab.
+2. Open `onnx-AML.ipynb`. This is the Python notebook you will step thru executing in this quickstart.
 
-### Follow the instructions within the notebook to complete the lab
+### Follow the instructions within the notebook to complete the quickstart
 
