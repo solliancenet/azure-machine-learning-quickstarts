@@ -50,7 +50,7 @@ Create a Machine Learning Compute named `qs-compute` as follows:
 
 1. Compute name: `qs-compute`
 2. Compute type: `Machine Learning Compute`
-3. Region: Select `your region`
+3. Region: `Select your region`
 4. Virtual machine size: `Standard_D2_v2`
 5. Minimum number of nodes: `1`
 6. Maximum number of nodes: `1`
