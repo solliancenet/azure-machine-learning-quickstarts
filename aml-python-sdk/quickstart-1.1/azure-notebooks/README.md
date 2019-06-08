@@ -30,7 +30,7 @@ The pipelines will be run on the Azure Machine Learning compute.
 
 ## Before you begin
 
-Confirm that you have completed quickstart: [quickstart-1.0 for Azure Notebooks](aml-python-sdk/quickstart-1.0/azure-notebooks-setup) before you begin.
+Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0/azure-notebooks-setup) for Azure Notebooks before you begin.
 
 ## Open Notebook for this Quickstart
 1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->01-aml-pipelines`. 
