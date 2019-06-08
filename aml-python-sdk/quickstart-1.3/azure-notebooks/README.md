@@ -1,6 +1,6 @@
-## Setting up your environment
+## Before you begin
 
-If you have not cloned this repository to your Azure notebooks, do so now. Follow instructions in `quickstart-1.0` to properly setup your environment. The notebook for this quickstart is located in folder: `aml-python-sdk->starter-artifacts->python-notebooks->03-aml-automl`.
+Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0/azure-notebooks-setup) for Azure Notebooks before you begin.
 
 ### Open the starting Python Notebook
 1. Within Azure Notebook, navigate to: `aml-python-sdk->starter-artifacts->python-notebooks->03-aml-automl`. 
