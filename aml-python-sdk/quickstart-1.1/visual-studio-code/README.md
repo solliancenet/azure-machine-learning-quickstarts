@@ -33,7 +33,7 @@ The pipelines will be run on the Azure Machine Learning compute.
 Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0) for Visual Studio Code before you begin.
 
 ### Open the starting Python file
-1. To run a lab, start Visual Studio Code and open the folder: `01-aml-pipelines`
+1. Start Visual Studio Code and open the folder: `01-aml-pipelines`
 2. From within Visual Studio Code click on the starting python file: `pipelines-AML.py`.
 3. Confirm that you have setup `azure_automl` as your interpreter.
 4. `pipelines-AML.py` is the Python file you will step thru executing in this lab.
