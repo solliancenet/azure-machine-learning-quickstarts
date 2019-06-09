@@ -43,8 +43,8 @@ The challenge with classifying text data is that deep learning models only under
 Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0) for Visual Studio Code before you begin.
 
 ### Open the starting Python file
-1. On your local computer expand the folder `04-aml-deep-learning`.
-2. To run a lab, open Visual Studio Code by double clicking the starting python file: `deep-learning-with-AML.py`.
+1. Start Visual Studio Code and open the folder: `04-aml-deep-learning`
+2. From within Visual Studio Code click on the starting python file: `deep-learning-with-AML.py`
 3. Confirm that you have setup `azure_automl` as your interpreter.
 4. `deep-learning-with-AML.py` is the Python file you will step thru executing in this lab.
 5. To execute each step click on `Run Cell` just above the block of code. 
