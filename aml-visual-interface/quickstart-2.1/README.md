@@ -191,7 +191,11 @@
 
 <img src="./images/16_1.png" width="70%" height="70%" title="Consume the Deployed Web Service" border="15">
 
-## Step 17: Cleanup Resources
+## Step 17: Challenge Experiment
+
+Is there another regression model that can give us an improved evaluation score on the `Root Mean Square Error (RMSE)` metric?  The `Boosted Decision Tree Regression` gave us an RMSE score of **3.96**. Experiment with other models like the `Neural Net Regression` model and evaluate if you can train a better performing model on the RMSE metric. Please note that the objective is to minimize the RMSE score.
+
+## Step 18: Cleanup Resources
 
 1. Go to Azure Portal and navigate to the Deployments section of the workspace
 2. **Delete** the deployed Web Service
