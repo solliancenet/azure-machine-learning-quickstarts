@@ -11,16 +11,16 @@ The quickstarts depend on the capability to utilize a certain quantity of Azure 
 The following are the specific quotas required, if your subscription does not meet the quota requirements in the region in which you will perform the quickstarts, you will need to request a quota increase thru Azure support:
 
 Compute-VM
-- Quota: Standard NC Family vCPU
+- Quota: Standard Dv2 Family vCPUs
 - Provider: Microsoft.Compute
-- SKU family: NC Promo Series
-- Required Limit: 24
+- SKU family: Dv2 Series
+- Required Limit: 14
 
 Compute-VM
 - Quota: Total Regional vCPUs
 - Provider: Microsoft.Compute
 - SKU family: Dv2 Series
-- Required Limit: 8
+- Required Limit: 14
 
 
 # Prerequisites
