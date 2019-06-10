@@ -137,13 +137,16 @@
 
 <img src="./images/018_CreateDeployment_3.png" width="70%" height="70%" title="Create Deployment Information Page">
 
-## Step 16: Clean-up
+## Step 16: Challenge Experiment
+In the current experiment, the pipeline of `MaxAbsScaler, RandomForest` gave us the best performing model with the spearman correlation score of: **0.934**. Can you expand the number of iterations for the Automated Machine Learning experiment to see if we can find a better performing model? Note that `Number of iterations` parameter is defined as follows: *In each iteration, a new machine learning model is trained with your data. This is the primary value that affects total run time.*
+
+## Step 17: Clean-up
 
 - We are done using the `Compute` resource.
 - Navigate to the `Compute` tab and delete your compute target: `auto-ml-compute`
 
 <img src="./images/013_DeleteCompute.png" width="70%" height="70%">
 
-## Step 17: Proceed to Part 2
+## Step 18: Proceed to Part 2
 
 - [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-2-automated-ml-with-azure-ml-python-sdk)
