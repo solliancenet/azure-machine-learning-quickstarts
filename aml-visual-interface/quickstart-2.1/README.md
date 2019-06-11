@@ -3,24 +3,28 @@
 - Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws9073123377.blob.core.windows.net/azureml-blobstore-0d1c4218-a5f9-418b-bf55-902b65277b85/quickstarts/nyc-taxi-data/nyc-taxi-sample-data.csv) on your local disk.
 - Confirm that you have setup the prerequisites from: [quickstart-2.0](../quickstart-2.0)
 
-## Step 1: Navigate to Visual Interface in Azure Portal
+# Exercise 1: Upload Training Dataset in Visual Interface
+
+## Task 1: Open Visual Interface
 
 1. Navigate to the machine learning workspace: `quick-starts-ws`
 2. Select `Visual interface` in the left navigation bar
-3. Click on **Launch visual interface**
+3. Select on **Launch visual interface**
 
 <img src="./images/01.png" width="70%" height="70%" title="Launch visual interface" border="15">
 
-## Step 2: Upload Training Dataset
+## Task 2: Upload Training Dataset
 
-1. Click on **+ New**
-2. Select **Datasets**
-3. Click on **Upload from Local File**
-4. Navigate to `nyc-taxi-sample-data.csv` on your local disk and click **Ok**
+1. From within Visual Interface select **+ New**
 
 <img src="./images/02_1.png" width="70%" height="70%" title="Click on + New" border="15">
 
+2. From the left navigation select **Datasets**
+3. From **New Datasets** select **Upload from Local File**
+
 <img src="./images/02_2.png" width="70%" height="70%" title="Click on Upload from Local File" border="15">
+
+4. Navigate to `nyc-taxi-sample-data.csv` on your local disk and select **Ok**
 
 <img src="./images/02_3.png" width="70%" height="70%" title="Click on Ok" border="15">
 
