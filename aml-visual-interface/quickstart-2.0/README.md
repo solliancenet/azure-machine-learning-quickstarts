@@ -32,29 +32,23 @@ Compute-VM
 Next, we will upfront create two Azure Machine Learning Computes, one for running machine learning experiments and the other for deploying trained models. Creating computes can take upto 5 minutes, thus we can start the creation and move on to the quickstart to conserve time. 
 
 
-# Create Azure Machine Learning Compute
-
-
-### Step 1
+## Task 1: Create Azure Machine Learning Compute
 
 Create a compute target in the workspace `quick-starts-ws` to run your Azure Machine Learning experiments.
 
-Navigate to your workspace and select `Compute` from the `Assets` section and click on **Add Compute**:
+1. Navigate to the workspace `quick-starts-ws` and select `Compute` from the `Assets` section and select on **Add Compute**:
 
 <img src="./images/01.png" width="70%" height="70%" title="Click on Add Compute">
 
+2. On the **Add Compute**, enter the following and then select **Create**:
 
-### Step 2
-
-Create a Machine Learning Compute named `qs-compute` as follows:
-
-1. Compute name: `qs-compute`
-2. Compute type: `Machine Learning Compute`
-3. Region: `Select your region`
-4. Virtual machine size: `Standard_D2_v2`
-5. Minimum number of nodes: `1`
-6. Maximum number of nodes: `1`
-7. Click on **Create**
+   a. Compute name: `qs-compute`
+   b. Compute type: `Machine Learning Compute`
+   c. Region: `Select your region`
+   d. Virtual machine size: `Standard_D2_v2`
+   e. Minimum number of nodes: `1`
+   f. Maximum number of nodes: `1`
+   g. Click on **Create**
 
 <img src="./images/02.png" width="70%" height="70%" title="Create a Machine Learning Compute">
 
