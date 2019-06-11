@@ -232,34 +232,50 @@
 
    <img src="./images/14_2.png" width="70%" height="70%" title="Deploy Web Service" border="15">
 
-# Exercise 9: Test the Deployed Web Service
+# Exercise 9: Consume the Deployed Web Service
 
-1. Navigate to the Web Services section of the Visual Interface, and open the web service
-2. Fill in the data to predict with your web service, and click **Test**
-3. Observed the **Raw** test results and predicted output **Scored Labels**
+## Task 1: Open the Deployed Web Service
 
-<img src="./images/15_1.png" width="70%" height="70%" title="Open the Web Service" border="15">
+1. Navigate to the Web Services section of the Visual Interface
 
-<img src="./images/15_2.png" width="70%" height="70%" title="Test the Web Service" border="15">
+2. Select the deployed Web Service
 
-## Step 16: Review how to Consume the Deployed Web Service
+   <img src="./images/15_1.png" width="70%" height="70%" title="Open the Web Service" border="15">
+   
+## Task 2: Test the Web Service
+
+1. Fill in the input data for predicting the NYC Taxi Fare, and select **Test**
+
+## Task 3: Observe Predictions
+
+1. Select the **Raw** test results and observe the predicted NYC Taxi Fare: **Scored Labels**
+
+   <img src="./images/15_2.png" width="70%" height="70%" title="Test the Web Service" border="15">
+
+## Task 4: Review how to Consume the Deployed Web Service
 
 1. Navigate to the **Consume** section of the Web Service
 2. Observe the provided sample code in C#, Python, and R to consume the Web Service
 
-<img src="./images/16_1.png" width="70%" height="70%" title="Consume the Deployed Web Service" border="15">
+   <img src="./images/16_1.png" width="70%" height="70%" title="Consume the Deployed Web Service" border="15">
 
-## Step 17: Challenge Experiment
+# Exercise 10: Challenge Experiment
 
 Is there another regression model that can give us an improved evaluation score on the `Root Mean Square Error (RMSE)` metric?  The `Boosted Decision Tree Regression` gave us an RMSE score of **4.17**. Experiment with other models like the `Neural Net Regression` model and evaluate if you can train a better performing model on the RMSE metric. Please note that the objective is to minimize the RMSE score.
 
-## Step 18: Cleanup Resources
+# Exercise 11: Cleanup Resources
+
+## Task 1: Delete Web Service
 
 1. Go to Azure Portal and navigate to the Deployments section of the workspace
 2. **Delete** the deployed Web Service
-3. Navigate to **Compute** section
-4. **Delete** both the compute targets created for this quickstart - one at a time
 
-<img src="./images/17_1.png" width="70%" height="70%" title="Delete the deployed Web Service" border="15">
+   <img src="./images/17_1.png" width="70%" height="70%" title="Delete the deployed Web Service" border="15">
 
-<img src="./images/17_2.png" width="70%" height="70%" title="Delete the Compute Targets" border="15">
+## Task 2: Delete Compute Targets
+
+1. Navigate to **Compute** section
+2. **Delete** both the compute targets created for this quickstart - one at a time
+
+   <img src="./images/17_2.png" width="70%" height="70%" title="Delete the Compute Targets" border="15">
+
