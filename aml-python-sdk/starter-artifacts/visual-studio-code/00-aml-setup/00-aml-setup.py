@@ -7,6 +7,18 @@ get_ipython().run_cell_magic('sh', '', 'pip install --upgrade azureml-sdk[notebo
 
 
 #%%
+get_ipython().run_cell_magic('sh', '', 'pip install scikit-learn==0.20.3')
+
+
+#%%
+get_ipython().run_cell_magic('sh', '', 'pip install -U scikit-image')
+
+
+#%%
+get_ipython().run_cell_magic('sh', '', 'pip install shap==0.28.5')
+
+
+#%%
 get_ipython().run_cell_magic('sh', '', 'pip install --upgrade Keras')
 
 
@@ -28,4 +40,3 @@ get_ipython().run_cell_magic('sh', '', 'pip install keras2onnx')
 
 #%%
 get_ipython().run_cell_magic('sh', '', 'pip install onnxruntime')
-

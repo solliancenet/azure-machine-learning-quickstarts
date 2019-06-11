@@ -87,6 +87,7 @@ ws = Workspace.create(
 ws.write_config()
 print('Workspace configuration succeeded')
 
+
 # ### Train the Model
 
 # In[ ]:
@@ -284,18 +285,9 @@ run.complete()
 
 # ### Create the Scoring Script
 
-# ### Challenge Task
-# 
-# Complete the implementation of the run method in the scoring script. 
-# First run the cell below that will create the scoring python file named 'score.py' in the working_directory
-# Open the score.py in VSC and go to the 'run' method. Fill in the missing code: Use the model to make predictions, and the scoring explainer to get local explanation.
-# 
-# A complete solution can be found in the accompanying python file: `solution-interpretability-with-AML.py`
-
-
 # In[ ]:
 
-get_ipython().run_cell_magic('writefile', 'score.py', "import json\nimport numpy as np\nimport pandas as pd\nimport os\nimport pickle\nimport sklearn\nfrom sklearn.externals import joblib\nfrom sklearn.ensemble import GradientBoostingRegressor\nfrom azureml.core.model import Model\n\ncolumns = ['vendorID', 'passengerCount', 'tripDistance', 'hour_of_day', 'day_of_week', 'day_of_month', \n           'month_num', 'normalizeHolidayName', 'isPaidTimeOff', 'snowDepth', 'precipTime', \n           'precipDepth', 'temperature']\n\ndef init():\n\n    global original_model\n    global scoring_explainer\n    \n    print('The scikit-learn version is {}.'.format(sklearn.__version__))\n\n    # Retrieve the path to the model file using the model name\n    # Assume original model is named original_prediction_model\n    original_model_path = Model.get_model_path('nyc-taxi-fare')\n    scoring_explainer_path = Model.get_model_path('nyc-taxi-fare-explainer')\n\n    original_model = joblib.load(original_model_path)\n    print('model loaded')\n    scoring_explainer = joblib.load(scoring_explainer_path)\n    print('explainer loaded')\n\ndef run(input_json):\n    # Get predictions and explanations for each data point\n    inputs = json.loads(input_json)\n    data_df = pd.DataFrame(np.array(inputs).reshape(-1, len(columns)), columns = columns)\n    \n    # Insert your code here...\n    # Make prediction (one line)\n    # predictions = ...\n    # Retrieve model explanations (one line)\n    # local_importance_values = ...\n    \n    # You can return any data type as long as it is JSON-serializable\n    return {'predictions': predictions.tolist(), 'local_importance_values': local_importance_values}")
+get_ipython().run_cell_magic('writefile', 'score.py', "import json\nimport numpy as np\nimport pandas as pd\nimport os\nimport pickle\nimport sklearn\nfrom sklearn.externals import joblib\nfrom sklearn.ensemble import GradientBoostingRegressor\nfrom azureml.core.model import Model\n\ncolumns = ['vendorID', 'passengerCount', 'tripDistance', 'hour_of_day', 'day_of_week', 'day_of_month', \n           'month_num', 'normalizeHolidayName', 'isPaidTimeOff', 'snowDepth', 'precipTime', \n           'precipDepth', 'temperature']\n\ndef init():\n\n    global original_model\n    global scoring_explainer\n    \n    print('The scikit-learn version is {}.'.format(sklearn.__version__))\n\n    # Retrieve the path to the model file using the model name\n    # Assume original model is named original_prediction_model\n    original_model_path = Model.get_model_path('nyc-taxi-fare')\n    scoring_explainer_path = Model.get_model_path('nyc-taxi-fare-explainer')\n\n    original_model = joblib.load(original_model_path)\n    print('model loaded')\n    scoring_explainer = joblib.load(scoring_explainer_path)\n    print('explainer loaded')\n\ndef run(input_json):\n    # Get predictions and explanations for each data point\n    inputs = json.loads(input_json)\n    data_df = pd.DataFrame(np.array(inputs).reshape(-1, len(columns)), columns = columns)\n    # Make prediction\n    predictions = original_model.predict(data_df)\n    # Retrieve model explanations\n    local_importance_values = scoring_explainer.explain(data_df)\n    # You can return any data type as long as it is JSON-serializable\n    return {'predictions': predictions.tolist(), 'local_importance_values': local_importance_values}")
 
 
 # ### Package Model

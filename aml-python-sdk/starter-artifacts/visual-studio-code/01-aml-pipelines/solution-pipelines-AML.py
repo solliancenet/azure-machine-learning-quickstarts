@@ -286,34 +286,22 @@ print("preprocessStep created")
 # 
 # *Open train.py in the local machine and examine the arguments, inputs, and outputs for the script.*
 
-### Challenge Task
-
-'''
-In the cell below create the train pipeline with the following parameters:
-
-1. name: train
-2. script_name: train.py
-3. arguments: "--input", processed_train_data, "--output", trained_model
-4. inputs
-5. outputs
-6. compute_target
-7. runconfig
-8. source_directory: project_folder
-
-Where it takes the PipelineData: `processed_train_data` as inputs and PipelineData: `trained_model` as outputs
-
-A complete solution can be found in the accompanying python file: `solution-pipelines-AML.py`
-'''
-
 # In[ ]:
+
 
 trained_model = PipelineData('trained_model', datastore=def_blob_store)
 print("PipelineData object created")
 
-# Insert your code here...
 trainStep = PythonScriptStep(
+    name="train",
+    script_name="train.py", 
+    arguments=["--input", processed_train_data, "--output", trained_model],
+    inputs=[processed_train_data],
+    outputs=[trained_model],
+    compute_target=aml_compute,
+    runconfig=run_amlcompute,
+    source_directory=project_folder
 )
-
 print("trainStep created")
 
 

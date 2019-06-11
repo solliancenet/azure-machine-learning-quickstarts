@@ -400,28 +400,19 @@ test_sample_json = json.dumps(test_sample.tolist())
 # invoke the web service
 result = webservice.run(input_data=test_sample_json)
 
-print(result)
+result
 
-'''
-# Challenge Task: Consume the Deployed Web Service #
-
-Complete the code below to consume the deployed webservice over HTTP
-
-A complete solution can be found in the accompanying python file: solution-onnx-AML.py
-'''
-
+### Consume the Deployed Web Service
 
 #%%
 
 import requests
 
-# Insert your code here (one line)
-url = ...
+url = webservice.scoring_uri
 print('Scoring URI is: {}'.format(url))
 headers = {'Content-Type':'application/json'}
 
-# Insert your code here (one line)
-response = ...
+response = requests.post(url, test_sample_json, headers=headers)
 print('Predictions')
 print(response.text)
 

@@ -281,18 +281,11 @@ labels = labels[indices]
 x_test = data[training_samples + validation_samples:]
 y_test = labels[training_samples + validation_samples:]
 
-'''
-## Challenge Task: Evaluate the model ##
 
-Complete the code below to evaluate the model using test data: (x_test, y_test)
-
-A complete solution can be found in the accompanying python file: solution-deep-learning-with-AML.py
-
-'''
+# Run the following cell to see the accuracy on the test set (it is the second number in the array displayed, on a scale from 0 to 1).
 
 # In[ ]:
 
 print('Model evaluation will print the following metrics: ', model.metrics_names)
-# Insert your code here (one line)
-evaluation_metrics = ...
+evaluation_metrics = model.evaluate(x_test, y_test)
 print(evaluation_metrics)
