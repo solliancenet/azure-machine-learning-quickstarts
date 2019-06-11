@@ -36,21 +36,27 @@ Next, we will upfront create two Azure Machine Learning Computes, one for runnin
 
 Create a compute target in the workspace `quick-starts-ws` to run your Azure Machine Learning experiments.
 
-1. Navigate to the workspace `quick-starts-ws` and select `Compute` from the `Assets` section and select on **Add Compute**:
+1. Navigate to your workspace `quick-starts-ws` and select `Compute` from the `Assets` section and then select on **Add Compute**:
 
-<img src="./images/01.png" width="70%" height="70%" title="Click on Add Compute">
+   <img src="./images/01.png" width="70%" height="70%" title="Click on Add Compute">
 
 2. On the **Add Compute**, enter the following and then select **Create**:
 
    a. Compute name: `qs-compute`
+   
    b. Compute type: `Machine Learning Compute`
+   
    c. Region: `Select your region`
+   
    d. Virtual machine size: `Standard_D2_v2`
+   
    e. Minimum number of nodes: `1`
+   
    f. Maximum number of nodes: `1`
+   
    g. Click on **Create**
 
-<img src="./images/02.png" width="70%" height="70%" title="Create a Machine Learning Compute">
+   <img src="./images/02.png" width="70%" height="70%" title="Create a Machine Learning Compute">
 
 
 # Create Kubernetes Service Compute
