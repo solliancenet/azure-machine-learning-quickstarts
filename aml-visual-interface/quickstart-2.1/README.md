@@ -105,21 +105,26 @@
 4. Select `totalAmount` as your target column, and then select **Ok**
 
    <img src="./images/06_2.png" width="70%" height="70%" title="Setup totalAmount as target column"  border="15">
+   
+## Task 8: Make Connections to Train Module
 
-## Task 8: Setup Score Model Module
+1. Connect the `Boosted Decision Tree Regression` module to `Train Model` module
+2. Connect the first output of `Split Data` module to `Train Model` module
+
+   <img src="./images/07_1a.png" width="70%" height="70%" title="Connect Train Module"  border="15">
+
+## Task 9: Setup Score Model Module
 
 1. Expand **Machine Learning, Score** section in the left panel
 2. Add **Score Model** module on to the canvas
-3. Complete the model training and scoring connections
-   - Connect the `Boosted Decision Tree Regression` module to `Train Model` module
-   - Connect the `Train Model` module to the first input of the `Score Model` module
-   - Connect the first output of `Split Data` module to `Train Model` module
-   - Connect the second output of `Split Data` module to the second input of the `Score Model` module
-4. Note that `Split Data` module will feed data for both model training and model scoring. The first output (0.7 fraction) will connect with the `Train Model` module and the second output (0.3 fraction) will connect with the `Score Model` module.
+3. Connect the `Train Model` module to the first input of the `Score Model` module
+4. Connect the second output of `Split Data` module to the second input of the `Score Model` module
 
-   <img src="./images/07_1.png" width="70%" height="70%" title="Score Model Module"  border="15">
+   <img src="./images/07_1b.png" width="70%" height="70%" title="Connect Score Module"  border="15">
+
+*Note that `Split Data` module will feed data for both model training and model scoring. The first output (0.7 fraction) will connect with the `Train Model` module and the second output (0.3 fraction) will connect with the `Score Model` module.*
    
-## Task 9: Setup Evaluate Model Module
+## Task 10: Setup Evaluate Model Module
 
 1. Open **Machine Learning, Evaluate** section in the left panel
 2. Add **Evaluate Model** module on to the canvas
