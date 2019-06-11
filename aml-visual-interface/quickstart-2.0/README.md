@@ -5,7 +5,7 @@ If a lab environment has not be provided for you, this lab provides the instruct
 The labs have the following requirements:
 - Azure subscription. You will need a valid and active Azure account to complete this Azure lab. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/en-us/free/).
 
-# Azure Quotas Required
+## Azure Quotas Required
 The quickstarts depend on the capability to utilize a certain quantity of Azure resources, for which your Azure subscription will need to have sufficient quota available. 
 
 The following are the specific quotas required, if your subscription does not meet the quota requirements in the region in which you will perform the quickstarts, you will need to request a quota increase thru Azure support:
@@ -23,7 +23,7 @@ Compute-VM
 - Required Limit: 14
 
 
-# Prerequisites
+## Prerequisites
 
 - Create an Azure resource group named: `QuickStarts`. See [Create Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/manage-resource-groups-portal) for details on how to create the resource group.
 
@@ -54,25 +54,27 @@ Create a compute target in the workspace `quick-starts-ws` to run your Azure Mac
    
    f. Maximum number of nodes: `1`
    
-   g. Click on **Create**
-
    <img src="./images/02.png" width="70%" height="70%" title="Create a Machine Learning Compute">
 
 
-# Create Kubernetes Service Compute
+## Task 2: Create Kubernetes Service Compute
 
 Next, we will create a Kubernetes Service Compute to publish the trained model as web service.
 
-Create Kubernetes Service compute as follows:
+1. Navigate to your workspace `quick-starts-ws` and select `Compute` from the `Assets` section and then select on **Add Compute**
 
-1. Compute name: `nyc-taxi`
-2. Compute type: `Kubernetes Service`
-3. Region: `Select your region`
-4. Virtual machine size: `Standard_D3_v2`
-5. Number of nodes: `3`
-6. Click on **Create**
+2. On the **Add Compute**, enter the following and then select **Create**:
 
-<img src="./images/03.png" width="70%" height="70%" title="Create Kubernetes Service Compute">
-
+   a. Compute name: `nyc-taxi`
+   
+   b. Compute type: `Kubernetes Service`
+   
+   c. Region: `Select your region`
+   
+   d. Virtual machine size: `Standard_D3_v2`
+   
+   e. Number of nodes: `3`
+   
+   <img src="./images/03.png" width="70%" height="70%" title="Create Kubernetes Service Compute">
 
 ## Next, follow the steps as outlined for quickstart [Azure Machine Learning Visual Interface](../../aml-visual-interface/quickstart-2.1/README.md)
