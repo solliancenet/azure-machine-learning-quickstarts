@@ -47,7 +47,7 @@
 
    <img src="./images/03_3.png" width="70%" height="70%" title="Drag and Drop My Dataset" border="15">
 
-## Task 3: Transform Data
+## Task 3: Select Columns in Dataset
 
 1. Open **Data Transformation, Manipulation section** section in the left panel
 2. Drag and drop **Select Columns in Dataset** module on to the canvas
@@ -60,21 +60,27 @@
 
    <img src="./images/04_2.png" width="70%" height="70%" title="Exclude vendorID column" border="15">
    
-6. Add **Clean Missing Data** module
-7. Sequentially connect the three modules
-8. Select the added  `Clean Missing Data` module
-9. Select `Replace with mean` as `Cleaning mode` in the right panel
-10. Select on **Edit columns** in the right panel
+## Task 4: Clean Missing Data
+   
+1. Add **Clean Missing Data** module
+2. Connect the `Dataset` to `Select Columns in Dataset` module
+3. Connect the `Select Columns in Dataset` to `Clean Missing Data` module
+4. Select the added  `Clean Missing Data` module
+5. Select `Replace with mean` as `Cleaning mode` in the right panel
+6. Select on **Edit columns** in the right panel
 
    <img src="./images/04_3.png" width="70%" height="70%" title="Clean Missing Data Module" border="15">
 
-11. Exclude the two non-numeric data columns `normalizeHolidayName` and `isPaidTimeOff` and then select **Ok**
+7. Exclude the two non-numeric data columns `normalizeHolidayName` and `isPaidTimeOff` and then select **Ok**
 
    <img src="./images/04_4.png" width="70%" height="70%" title="Exclude non-numeric columns" border="15">
-   
-12. Expand **Data Transformation, Sample and Split** in the left navigation and add the **Split Data** module 
-13. Connect the first output from `Clean Missing Data` module to the `Split Data` module
-14. Select the **Split Data** module and set `0.7` as the fraction of rows in first output
+
+## Task 5: Split the Training Data
+
+1. Expand **Data Transformation, Sample and Split** in the left navigation and add the **Split Data** module 
+2. Connect the first output from `Clean Missing Data` module to the `Split Data` module
+3. Select the **Split Data** module
+4. Set `0.7` as the fraction of rows in first output
 
    <img src="./images/04_5.png" width="70%" height="70%" title="Split Data Module" border="15">
 
