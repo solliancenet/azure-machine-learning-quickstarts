@@ -11,85 +11,96 @@
 2. Select `Visual interface` in the left navigation bar
 3. Select on **Launch visual interface**
 
-<img src="./images/01.png" width="70%" height="70%" title="Launch visual interface" border="15">
+   <img src="./images/01.png" width="70%" height="70%" title="Launch visual interface" border="15">
 
 ## Task 2: Upload Training Dataset
 
 1. From within Visual Interface select **+ New**
 
-<img src="./images/02_1.png" width="70%" height="70%" title="Click on + New" border="15">
+   <img src="./images/02_1.png" width="70%" height="70%" title="Click on + New" border="15">
 
 2. From the left navigation select **Datasets**
 3. From **New Datasets** select **Upload from Local File**
 
-<img src="./images/02_2.png" width="70%" height="70%" title="Click on Upload from Local File" border="15">
+   <img src="./images/02_2.png" width="70%" height="70%" title="Click on Upload from Local File" border="15">
 
-4. Navigate to `nyc-taxi-sample-data.csv` on your local disk and select **Ok**
+4. Use **Choose File** to select `nyc-taxi-sample-data.csv` from your local disk and then select **Ok**
 
-<img src="./images/02_3.png" width="70%" height="70%" title="Click on Ok" border="15">
+   <img src="./images/02_3.png" width="70%" height="70%" title="Click on Ok" border="15">
 
-## Step 3: Create New Blank Experiment and Select your Dataset
+# Exercise 2: Create Experiment
 
-1. Click on **+ New**
+## Task 1: Create New Blank Experiment
+
+1. From within Visual Interface select **+ New**
 2. Select **+ Blank Experiment**
-3. Expand **Saved Datasets, My Datasets** in the left navigation
-4. Drag and drop your dataset `nyc-taxi-sample-data.csv` on to the canvas
 
-<img src="./images/03_1.png" width="70%" height="70%" title="Click on + Blank Experiment" border="15">
+   <img src="./images/03_1.png" width="70%" height="70%" title="Click on + Blank Experiment" border="15">
 
-<img src="./images/03_2.png" width="70%" height="70%" title="Expand My Datasets" border="15">
+## Task 2: Select Dataset
 
-<img src="./images/03_3.png" width="70%" height="70%" title="Drag and Drop My Dataset" border="15">
+1. Expand **Saved Datasets, My Datasets** in the left navigation
 
-## Step 4: Transform your data
+   <img src="./images/03_2.png" width="70%" height="70%" title="Expand My Datasets" border="15">
+
+2. Drag and drop the dataset `nyc-taxi-sample-data.csv` on to the canvas
+
+   <img src="./images/03_3.png" width="70%" height="70%" title="Drag and Drop My Dataset" border="15">
+
+## Task 3: Transform Data
 
 1. Open **Data Transformation, Manipulation section** section in the left panel
 2. Drag and drop **Select Columns in Dataset** module on to the canvas
 3. Select the added `Select Columns in Dataset` module
 4. Click on **Edit columns** in the right panel
-5. Select **Begin With All Columns** and then in the drop down select **Exclude**. Enter the column name `vendorID` in the textbox.
+
+   <img src="./images/04_1.png" width="70%" height="70%" title="Select Columns in Dataset Module" border="15">
+
+5. Select **Begin With All Columns** and then in the drop down select **Exclude**. Enter the column name `vendorID` in the textbox and then select **Ok**.
+
+   <img src="./images/04_2.png" width="70%" height="70%" title="Exclude vendorID column" border="15">
+   
 6. Add **Clean Missing Data** module
 7. Sequentially connect the three modules
 8. Select the added  `Clean Missing Data` module
 9. Select `Replace with mean` as `Cleaning mode` in the right panel
-10. Click on **Edit columns** in the right panel
-11. Exclude the two non-numeric data columns `normalizeHolidayName` and `isPaidTimeOff`
+10. Select on **Edit columns** in the right panel
+
+   <img src="./images/04_3.png" width="70%" height="70%" title="Clean Missing Data Module" border="15">
+
+11. Exclude the two non-numeric data columns `normalizeHolidayName` and `isPaidTimeOff` and then select **Ok**
+
+   <img src="./images/04_4.png" width="70%" height="70%" title="Exclude non-numeric columns" border="15">
+   
 12. Expand **Data Transformation, Sample and Split** in the left navigation and add the **Split Data** module 
 13. Connect the first output from `Clean Missing Data` module to the `Split Data` module
 14. Select the **Split Data** module and set `0.7` as the fraction of rows in first output
 
+   <img src="./images/04_5.png" width="70%" height="70%" title="Split Data Module" border="15">
+
 *Note that you can run the experiment at any point to peek at the outputs and activities. Running experiments also generates metadata that is available for downstream activities such selecting column names from a list in selection dialogs.*
 
-<img src="./images/04_1.png" width="70%" height="70%" title="Select Columns in Dataset Module" border="15">
-
-<img src="./images/04_2.png" width="70%" height="70%" title="Exclude vendorID column" border="15">
-
-<img src="./images/04_3.png" width="70%" height="70%" title="Clean Missing Data Module" border="15">
-
-<img src="./images/04_4.png" width="70%" height="70%" title="Exclude non-numeric columns" border="15">
-
-<img src="./images/04_5.png" width="70%" height="70%" title="Split Data Module" border="15">
-
-## Step 5: Initialize your Regression Model
+## Task 4: Initialize Regression Model
 
 1. Expand **Machine Learning, Initialize Model, Regression** section in the left panel
 2. Add the **Boosted Decision Tree Regression** module on to the canvas
 3. Configure your model parameters: `Minimum number of samples per node: 1` and `Learning rate: 0.1`
 
-<img src="./images/05_1.png" width="70%" height="70%" title="Boosted Decision Tree Regression Module"  border="15">
+   <img src="./images/05_1.png" width="70%" height="70%" title="Boosted Decision Tree Regression Module"  border="15">
 
-## Step 6: Setup Train Model Module
+## Task 5: Setup Train Model Module
 
 1. Expand **Machine Learning, Train** section in the left panel
 2. Add **Train Model** module on to the canvas
-3. Click on **Edit columns** in the right panel to setup your `Label or Target column`
-4. Select `totalAmount` as your target column
 
-<img src="./images/06_1.png" width="70%" height="70%" title="Train Model Module"  border="15">
+   <img src="./images/06_1.png" width="70%" height="70%" title="Train Model Module"  border="15">
+   
+3. Select on **Edit columns** in the right panel to setup your `Label or Target column`
+4. Select `totalAmount` as your target column, and then select **Ok**
 
-<img src="./images/06_2.png" width="70%" height="70%" title="Setup totalAmount as target column"  border="15">
+   <img src="./images/06_2.png" width="70%" height="70%" title="Setup totalAmount as target column"  border="15">
 
-## Step 7: Setup Score Model and Evaluate Model Modules
+## Task 6: Setup Score Model Module
 
 1. Expand **Machine Learning, Score** section in the left panel
 2. Add **Score Model** module on to the canvas
@@ -99,86 +110,113 @@
    - Connect the first output of `Split Data` module to `Train Model` module
    - Connect the second output of `Split Data` module to the second input of the `Score Model` module
 4. Note that `Split Data` module will feed data for both model training and model scoring. The first output (0.7 fraction) will connect with the `Train Model` module and the second output (0.3 fraction) will connect with the `Score Model` module.
-5. Open **Machine Learning, Evaluate** section in the left panel
-6. Add **Evaluate Model** module on to the canvas
-7. Connect the `Score Model` module to `Evaluate Model` module
 
-<img src="./images/07_1.png" width="70%" height="70%" title="Score Model Module"  border="15">
+   <img src="./images/07_1.png" width="70%" height="70%" title="Score Model Module"  border="15">
+   
+## Task 7: Setup Evaluate Model Module
 
-<img src="./images/07_2.png" width="70%" height="70%" title="Evaluate Model Module"  border="15">
+1. Open **Machine Learning, Evaluate** section in the left panel
+2. Add **Evaluate Model** module on to the canvas
+3. Connect the `Score Model` module to `Evaluate Model` module
 
-## Step 8: Run the Experiment
+   <img src="./images/07_2.png" width="70%" height="70%" title="Evaluate Model Module"  border="15">
 
-1. Click on **Run**
+# Exercise 3: Run Experiment and Visualize Results
+
+## Task 1: Run the Experiment
+
+1. From the experiment select **Run**
+
+   <img src="./images/08_1.png" width="70%" height="70%" title="Click on Run Experiment"  border="15">
+   
 2. Note that you can create a new **Compute Target** directly from **Visual Interface**
 3. Select the existing compute target we created upfront in `quickstart-2.0`
-4. Click on **Run**
+4. Select **Run**
 5. The experiment will run for about 8-10 minutes 
 
-<img src="./images/08_1.png" width="70%" height="70%" title="Click on Run Experiment"  border="15">
+   <img src="./images/08_2.png" width="70%" height="70%" title="Select Compute and Run Experiment"  border="15">
 
-<img src="./images/08_2.png" width="70%" height="70%" title="Select Compute and Run Experiment"  border="15">
-
-## Step 9: Visualize the Model Predictions
+## Task 2: Visualize the Model Predictions
 
 1. Wait for model training to be complete
 2. Right click on **Score Model** module and select **Scored dataset -> Visualize**
+
+   <img src="./images/09_1.png" width="70%" height="70%" title="Visualize the Model Predictions" border="15">
+   
 3. Compare the predicted `predicted taxi fares` to the `target taxi fares`
 4. You can also observe the predicted value distribution when you select the `Scored Labels` column 
- 
-<img src="./images/09_1.png" width="70%" height="70%" title="Visualize the Model Predictions" border="15">
 
-<img src="./images/09_2.png" width="70%" height="70%" title="Compare prediction to actual values" border="15">
+   <img src="./images/09_2.png" width="70%" height="70%" title="Compare prediction to actual values" border="15">
 
-## Step 10: Visualize the Evaluation Results
+## Task 3: Visualize the Evaluation Results
 
 1. Right click on **Evaluate Model** module and select **Evaluation results -> Visualize**
+
+   <img src="./images/10_1.png" width="70%" height="70%" title="Visualize the Model Evaluation" border="15">
+   
 2. Observe the Model Evaluation Metrics such as **Root Mean Squared Error**
 
-<img src="./images/10_1.png" width="70%" height="70%" title="Visualize the Model Evaluation" border="15">
+   <img src="./images/10_2.png" width="70%" height="70%" title="Model Evaluation Metrics" border="15">
 
-<img src="./images/10_2.png" width="70%" height="70%" title="Model Evaluation Metrics" border="15">
+# Exercise 4: View Experiment Run History
 
-## Step 11: Experiment Run History
+## Task 1: Go to Run History
 
-1. Click on **Run History**
-2. Go back to the Experiment by clicking on the `Editable` version of the Run History
+1. From the experiment select **Run History**
 
-<img src="./images/11_1.png" width="70%" height="70%" title="Go to Run History" border="15">
+   <img src="./images/11_1.png" width="70%" height="70%" title="Go to Run History" border="15">
+   
+## Task 2: Return to Experiment
+   
+1. Go back to the Experiment by selecting the Run History item with `Editable` state
 
-<img src="./images/11_2.png" width="70%" title="Go back to the experiment">
+   <img src="./images/11_2.png" width="70%" title="Go back to the experiment">
 
-## Step 12: Save the Trained Model
+# Exercise 5: Save Trained Model
+
+## Task 1: Save Trained Model
 
 1. Right click on the `Train Model` module and select **Trained model -> Save as Trained Model**
-2. Save the Trained Model
 
-<img src="./images/12_1.png" width="70%" height="70%" title="Right click on the Train Model module" border="15">
+   <img src="./images/12_1.png" width="70%" height="70%" title="Right click on the Train Model module" border="15">
+   
+2. Provide `model name` and select **Ok**
 
-<img src="./images/12_2.png" width="70%" height="70%" title="Save the Trained Model" border="15">
+   <img src="./images/12_2.png" width="70%" height="70%" title="Save the Trained Model" border="15">
 
-## Step 13: Run Predictive Experiment
+# Exercise 6: Run Predictive Experiment
+
+## Task 1: Create Predictive Experiment
 
 1. Observe the saved model appears in the `Trained Models` section
 2. Click on **Create Predictive Experiment**
-3. Click on **Run**
-4. Select the existing compute target to run the experiment
-5. It will take about 4-5 minutes to run the predictive experiment
+3. This will create the `Predictive Experiment` in a new tab named: **Predictive experiment**
 
-<img src="./images/13_1.png" width="70%" height="70%" title="Create Predictive Experiment" border="15">
+   <img src="./images/13_1.png" width="70%" height="70%" title="Create Predictive Experiment" border="15">
 
-<img src="./images/13_2.png" width="70%" height="70%" title="Click on Run" border="15">
+## Task 2: Run Predictive Experiment
 
-## Step 14: Deploy Web Service
+1. From the **Predictive experiment** tab, select **Run**
+2. Select the existing compute target to run the predictive experiment
+3. It will take about 4-5 minutes to run the predictive experiment
 
-1. Click on **Deploy Web Service**
-2. Select the existing Kubernetes Service compute, and click **Deploy**
+   <img src="./images/13_2.png" width="70%" height="70%" title="Click on Run" border="15">
 
-<img src="./images/14_1.png" width="70%" height="70%" title="Deploy Web Service" border="15">
+# Exercise 7: Deploy Web Service on Kubernetes Service Compute
 
-<img src="./images/14_2.png" width="70%" height="70%" title="Deploy Web Service" border="15">
+## Task 1: Deploy Web Service
 
-## Step 15: Test the Deployed Web Service
+1. From the **Predictive experiment** tab, select **Deploy Web Service**
+
+   <img src="./images/14_1.png" width="70%" height="70%" title="Deploy Web Service" border="15">
+   
+## Task 2: Select Compute Target to Deploy Web Service
+   
+1. Select the existing Kubernetes Service compute, and select **Deploy**
+
+   <img src="./images/14_2.png" width="70%" height="70%" title="Deploy Web Service" border="15">
+
+# Exercise 8: Test the Deployed Web Service
 
 1. Navigate to the Web Services section of the Visual Interface, and open the web service
 2. Fill in the data to predict with your web service, and click **Test**
