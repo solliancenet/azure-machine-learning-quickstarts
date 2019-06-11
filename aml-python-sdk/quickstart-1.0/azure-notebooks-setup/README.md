@@ -31,7 +31,7 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 1. Navigate to your project: `azure-machine-learning-quickstarts`
 
-2. Start your Notebook server on `Free Compute` by clicking on the **Play** icon in the toolbar as shown:
+2. Start your Notebook server on `Free Compute` by selecting the **Play** icon in the toolbar as shown:
 
 	<img src="./images/setup_notebook/02.png" width="70%" height="70%" title="Start Notebook Server">
 
