@@ -28,7 +28,7 @@
 
    <img src="./images/02_3.png" width="70%" height="70%" title="Click on Ok" border="15">
 
-# Exercise 2: Create Experiment
+# Exercise 2: Define Experiment
 
 ## Task 1: Create New Blank Experiment
 
@@ -86,7 +86,7 @@
 
 *Note that you can run the experiment at any point to peek at the outputs and activities. Running experiments also generates metadata that is available for downstream activities such selecting column names from a list in selection dialogs.*
 
-## Task 4: Initialize Regression Model
+## Task 6: Initialize Regression Model
 
 1. Expand **Machine Learning, Initialize Model, Regression** section in the left panel
 2. Add the **Boosted Decision Tree Regression** module on to the canvas
@@ -94,7 +94,7 @@
 
    <img src="./images/05_1.png" width="70%" height="70%" title="Boosted Decision Tree Regression Module"  border="15">
 
-## Task 5: Setup Train Model Module
+## Task 7: Setup Train Model Module
 
 1. Expand **Machine Learning, Train** section in the left panel
 2. Add **Train Model** module on to the canvas
@@ -106,7 +106,7 @@
 
    <img src="./images/06_2.png" width="70%" height="70%" title="Setup totalAmount as target column"  border="15">
 
-## Task 6: Setup Score Model Module
+## Task 8: Setup Score Model Module
 
 1. Expand **Machine Learning, Score** section in the left panel
 2. Add **Score Model** module on to the canvas
@@ -119,7 +119,7 @@
 
    <img src="./images/07_1.png" width="70%" height="70%" title="Score Model Module"  border="15">
    
-## Task 7: Setup Evaluate Model Module
+## Task 9: Setup Evaluate Model Module
 
 1. Open **Machine Learning, Evaluate** section in the left panel
 2. Add **Evaluate Model** module on to the canvas
