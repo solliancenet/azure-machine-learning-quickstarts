@@ -132,22 +132,27 @@
 
    <img src="./images/07_2.png" width="70%" height="70%" title="Evaluate Model Module"  border="15">
 
-# Exercise 3: Run Experiment and Visualize Results
+# Exercise 3: Run Experiment
 
-## Task 1: Run the Experiment
+## Task 1: Select Run Experiment
 
 1. From the experiment select **Run**
 
    <img src="./images/08_1.png" width="70%" height="70%" title="Click on Run Experiment"  border="15">
    
-2. Note that you can create a new **Compute Target** directly from **Visual Interface**
-3. Select the existing compute target we created upfront in `quickstart-2.0`
+## Task 2: Select Compute to Run Experiment
+   
+1. Note that you can create a new **Compute Target** directly from **Visual Interface**
+2. Select **Select existing**
+3. Select **qs-compute** (this is the compute target we created in `quickstart-2.0`)
 4. Select **Run**
 5. The experiment will run for about 8-10 minutes 
 
    <img src="./images/08_2.png" width="70%" height="70%" title="Select Compute and Run Experiment"  border="15">
 
-## Task 2: Visualize the Model Predictions
+# Exercise 4: Visualize Results
+
+## Task 1: Visualize the Model Predictions
 
 1. Wait for model training to be complete
 2. Right click on **Score Model** module and select **Scored dataset -> Visualize**
@@ -159,7 +164,7 @@
 
    <img src="./images/09_2.png" width="70%" height="70%" title="Compare prediction to actual values" border="15">
 
-## Task 3: Visualize the Evaluation Results
+## Task 2: Visualize the Evaluation Results
 
 1. Right click on **Evaluate Model** module and select **Evaluation results -> Visualize**
 
@@ -169,7 +174,7 @@
 
    <img src="./images/10_2.png" width="70%" height="70%" title="Model Evaluation Metrics" border="15">
 
-# Exercise 4: View Experiment Run History
+# Exercise 5: View Experiment Run History
 
 ## Task 1: Go to Run History
 
@@ -183,7 +188,7 @@
 
    <img src="./images/11_2.png" width="70%" title="Go back to the experiment">
 
-# Exercise 5: Save Trained Model
+# Exercise 6: Save Trained Model
 
 ## Task 1: Save Trained Model
 
@@ -195,12 +200,12 @@
 
    <img src="./images/12_2.png" width="70%" height="70%" title="Save the Trained Model" border="15">
 
-# Exercise 6: Run Predictive Experiment
+# Exercise 7: Run Predictive Experiment
 
 ## Task 1: Create Predictive Experiment
 
 1. Observe the saved model appears in the `Trained Models` section
-2. Click on **Create Predictive Experiment**
+2. Select **Create Predictive Experiment**
 3. This will create the `Predictive Experiment` in a new tab named: **Predictive experiment**
 
    <img src="./images/13_1.png" width="70%" height="70%" title="Create Predictive Experiment" border="15">
@@ -213,7 +218,7 @@
 
    <img src="./images/13_2.png" width="70%" height="70%" title="Click on Run" border="15">
 
-# Exercise 7: Deploy Web Service on Kubernetes Service Compute
+# Exercise 8: Deploy Web Service on Kubernetes Service Compute
 
 ## Task 1: Deploy Web Service
 
@@ -227,7 +232,7 @@
 
    <img src="./images/14_2.png" width="70%" height="70%" title="Deploy Web Service" border="15">
 
-# Exercise 8: Test the Deployed Web Service
+# Exercise 9: Test the Deployed Web Service
 
 1. Navigate to the Web Services section of the Visual Interface, and open the web service
 2. Fill in the data to predict with your web service, and click **Test**
