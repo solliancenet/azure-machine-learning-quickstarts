@@ -6,90 +6,116 @@
 
 - Download the training data file [nyc-taxi-sample-data.csv](https://quickstartsws9073123377.blob.core.windows.net/azureml-blobstore-0d1c4218-a5f9-418b-bf55-902b65277b85/quickstarts/nyc-taxi-data/nyc-taxi-sample-data.csv) on your local disk.
 
-## Step 1: Navigate to Automated Machine Learning in Azure Portal
+# Exercise 1: Setup New Automated Machine Learning Experiment
 
-- Navigate to the machine learning workspace: `quick-starts-ws-XXXXX` or `quick-starts-ws`
-- Select `Automated machine learning` in the left navigation bar
-- Click on **Create Experiment**
+## Task 1: Create New Automated Machine Learning Experiment
 
-<img src="./images/02_CreateExperiment.png" width="70%" height="70%" title="Create new experiment">
+1. In Azure Portal, open the machine learning workspace: `quick-starts-ws-XXXXX` or `quick-starts-ws`
+2. Select `Automated machine learning` in the left navigation bar
+3. Select **Create Experiment** from the content section
+4. This will open a `Create a new automated machine learning experiment` page
 
-## Step 2: Create Experiment
+  <img src="./images/02_CreateExperiment.png" width="70%" height="70%" title="Create new experiment">
 
-- Provide an experiment name: `auto-ml-exp`
-- Click on **Create a new compute**
+5. Provide an experiment name: `auto-ml-exp`
+6. Select **Create a new compute**
 
-<img src="./images/03_NewExperiment_1.png" width="70%" height="70%"  title="Provide experiment name and click on compute">
+  <img src="./images/03_NewExperiment_1.png" width="70%" height="70%"  title="Provide experiment name and click on compute">
 
-## Step 3: Create New Compute
+## Task 2: Create New Compute
 
-- Provide compute name: `auto-ml-compute`
-- Select your VM size
-- Provide `Additional Settings`
-- Click on **Create**
-- Wait for Compute to be ready
-- Click on **Next**
+1. Provide compute name: `auto-ml-compute`
+2. Select your VM size: `Standard_DS3_v2`
+3. Provide `Additional Settings`
 
-<img src="./images/04_CreateNewCompute.png" width="70%" height="70%" title="Create new compute">
+   a. Minimum number of nodes: 1
+   
+   b. Maximum number of nodes: 1
+   
+4. Select **Create**
+5. Wait for compute to be ready. This may take 2-3 minutes.
+6. Select **Next**
 
-## Step 4: Upload Training Data
+  <img src="./images/04_CreateNewCompute.png" width="70%" height="70%" title="Create new compute">
 
-- Click on **Upload**
+# Exercise 2: Upload and Review Training Data
+
+## Task 1: Upload Training Data
+
+- Select **Upload**
 - Upload `nyc-taxi-sample-data.csv` from your local disk
 
-<img src="./images/05_UploadDataFile.png" width="70%" height="70%" title="Upload training data">
+  <img src="./images/05_UploadDataFile.png" width="70%" height="70%" title="Upload training data">
 
-## Step 5: Review Training Data
+## Task 2: Review Training Data
 
-- Click on **nyc-taxi-sample-data.csv**
+- Select **nyc-taxi-sample-data.csv** from the list
+
+  <img src="./images/06_ReviewDataFile.png" width="70%" height="70%" title="Select training data">
+
 - Review your training data. Scroll to right to observe the target column: `totalAmount`
 
-<img src="./images/06_ReviewDataFile.png" width="70%" height="70%" title="Review training data">
+  <img src="./images/061_ReviewDataFile.png" width="70%" height="70%" title="Review training data">
 
-## Step 6: Setup AutoML Experiment Basic Settings
+# Exercise 3: Setup Experiment Settings
 
-- Select Prediction Task **Regression**
-- Select Target column: **totalAmount**
-- Click on **Advanced Settings**
+## Task 1: Basic Settings
 
-<img src="./images/07_SetupExp_1.png" width="70%" height="70%" title="Setup AuoML experiment basic settings">
+1. Select Prediction Task: **Regression**
+2. Select Target column: **totalAmount**
+3. Open **Advanced Settings**
 
-## Step 7: Setup AutoML Experiment Advanced Settings and Run Experiment
+  <img src="./images/07_SetupExp_1.png" width="70%" height="70%" title="Setup experiment basic settings">
 
-- Select Primary metric **spearman_correlation**
-- Select Max number of iterations: **3**
-- Select Number of Cross Validations: **5**
-- Select Max concurrent iterations: **1**
-- Scroll down and click on **Start** to run the experiment
+## Task 2: Advanced Settings
 
-<img src="./images/08_SetupExp_2.png" width="70%" height="70%" title="Setup AutoML Experiment Advanced Settings and Run Experiment">
+1. Select Primary metric **spearman_correlation**
+2. Select Max number of iterations: **3**
+3. Select Number of Cross Validations: **5**
+4. Select Max concurrent iterations: **1**
 
-## Step 8: Review Experiment Run Results
+  <img src="./images/08_SetupExp_2.png" width="70%" height="70%" title="Setup experiment advanced settings">
 
-- The experiment will run for about *5-10 min*
-- Observe the model performance for the primary metric for different iterations
-- Scroll down to see a table view of different iterations
-- Click on the iteration with the best **spearman_correlation** score. Note that the spearman_correlation measures the monotonic relationships between the predicted value and actual value. In this case, the model with spearman_correlation score closest to 1 is the best model.
+# Exercise 4: Start and Monitor Experiment
 
-<img src="./images/09_ReviewRunDetails_1.png" width="70%" height="70%" title="Review run details - graph view">
-<img src="./images/010_ReviewRunDetails_2.png" width="70%" height="70%" title="Review run details - table view">
+## Task 1: Start Experiment
 
-## Step 9: Review Best Model Predictions
+1. Scroll down and select **Start** to run the experiment
 
-- Review **Predicted Taxi Fare vs True Taxi Fare** for your best model
+  <img src="./images/09_StartExp.png" width="70%" height="70%" title="Start Experiment">
 
-<img src="./images/011_ReviewPredictions.png" width="70%" height="70%" title="Review Best Model Predictions">
+## Task 2: Monitor Experiment
 
-## Step 10: Review Best Model Metrics
+1. The experiment will run for about *5-10 min*
+2. In the **Run Details** screen, observe the performance of the various models for the primary metric: **spearman_correlation**
 
-- Scroll down to review various performance metrics for your best model
+  <img src="./images/09_ReviewRunDetails_1.png" width="70%" height="70%" title="Review run details - graph view">
+  
+3. Scroll down to see a table view of different iterations
+4. Wait for the experiment to complete
 
-<img src="./images/012_ReviewMetrics.png" width="70%" height="70%" title="Review Best Model Metrics">
+# Exercise 5: Review Best Model's Performance
 
-## Step 11: Deploy Best Model
+## Task 1: Review Best Model Predictions
+
+1. From the table view, select the iteration with the best **spearman_correlation** score. Note that the spearman_correlation measures the monotonic relationships between the predicted value and actual value. In this case, the model with spearman_correlation score closest to 1 is the best model.
+
+  <img src="./images/010_ReviewRunDetails_2.png" width="70%" height="70%" title="Review run details - table view">
+  
+2. Review **Predicted Taxi Fare vs True Taxi Fare** for your model
+
+  <img src="./images/011_ReviewPredictions.png" width="70%" height="70%" title="Review Best Model Predictions">
+
+## Task 2: Review Best Model Metrics
+
+1. Scroll down to review various performance metrics for your model
+
+  <img src="./images/012_ReviewMetrics.png" width="70%" height="70%" title="Review Best Model Metrics">
+
+# Exercise 6: Deploy Best Model
 
 - Return to `Run Details` screen
-- Click on **Deploy Best Model** as shown
+- Select **Deploy Best Model** as shown
 - Note that deployment consists of four steps: (1) *Register Best Model*, (2) Download *Scoring and Environment Script files*, (3) Create *Deployment Image* using the downloaded script files, and (4) Deploy *Scoring Web Service* using the created image.
 
 <img src="./images/014_DeployBestModel.png" width="70%" height="70%" title="Deploy Best Model">
