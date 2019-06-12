@@ -130,7 +130,7 @@ Note that deployment process consists of four steps: (1) *Register Best Model*, 
 ## Step 2: Download the Script Files
 
 1. Select **Download Scoring Script** link. This will download `scoring.py` file to your local disk.
-2. Select **Download Environment Script** link. this will download `condaEnv.yml` file to your local disk.
+2. Select **Download Environment Script** link. This will download `condaEnv.yml` file to your local disk.
 
 <img src="./images/016_DownloadScripts.png" width="70%" height="70%" title="Download the Script Files">
 
@@ -189,10 +189,10 @@ In the current experiment, the pipeline of `MaxAbsScaler, RandomForest` gave us 
 
 # Exercise 8: Clean-up
 
-1. Navigate to the `Compute` tab and delete your compute target: `auto-ml-compute`
+1. Navigate to the `Compute` section in your Azure Portal Workspace and delete your compute target: `auto-ml-compute`
 
   <img src="./images/013_DeleteCompute.png" width="70%" height="70%">
 
 # Exercise 9: Proceed to Part 2
 
-- [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-2-automated-ml-with-azure-ml-python-sdk)
+1. [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-2-automated-ml-with-azure-ml-python-sdk)
