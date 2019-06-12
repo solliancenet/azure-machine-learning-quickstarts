@@ -114,65 +114,85 @@
 
 # Exercise 6: Deploy Best Model
 
-- Return to `Run Details` screen
-- Select **Deploy Best Model** as shown
-- Note that deployment consists of four steps: (1) *Register Best Model*, (2) Download *Scoring and Environment Script files*, (3) Create *Deployment Image* using the downloaded script files, and (4) Deploy *Scoring Web Service* using the created image.
+1. Return to `Run Details` screen
+2. Select **Deploy Best Model** as shown
 
-<img src="./images/014_DeployBestModel.png" width="70%" height="70%" title="Deploy Best Model">
+  <img src="./images/014_DeployBestModel.png" width="70%" height="70%" title="Deploy Best Model">
+  
+Note that deployment process consists of four steps: (1) *Register Best Model*, (2) Download *Scoring and Environment Script files*, (3) Create *Deployment Image* using the downloaded script files, and (4) Deploy *Scoring Web Service* using the created image.
 
-## Step 12: Register Best Model
+## Step 1: Register Best Model
 
-- Click on **Register Model** link.
+1. Select **Register Model** link.
 
-<img src="./images/015_RegisterModel.png" width="70%" height="70%" title="Register Best Model">
+  <img src="./images/015_RegisterModel.png" width="70%" height="70%" title="Register Best Model">
 
-## Step 13: Download the Script Files
+## Step 2: Download the Script Files
 
-- Click on **Download Scoring Script** link. This will download `scoring.py` file to your local disk.
-- Click on **Download Environment Script** link. this will download `condaEnv.yml` file to your local disk.
+1. Select **Download Scoring Script** link. This will download `scoring.py` file to your local disk.
+2. Select **Download Environment Script** link. this will download `condaEnv.yml` file to your local disk.
 
 <img src="./images/016_DownloadScripts.png" width="70%" height="70%" title="Download the Script Files">
 
-## Step 14: Create the Deployment Image
+## Step 3: Create the Deployment Image
 
-- Navigate to the `Models` section in your Azure Portal Workspace.
-- Select the `Registered Model`
-- Click on **Create Image**
-- On the `Create an Image` page provide the information as shown below. Note that you should upload the corresponding script files downloaded in step # 13.
-- Click on **Create** button.
-- Creating an image can take upto 5-10 minutes. Wait for the image to be created before proceeding.
+1. Navigate to the `Models` section in your Azure Portal Workspace
+2. Select the `Registered Model`
+3. Select **Create Image**
 
-<img src="./images/017_CreateImage_1.png" width="70%" height="70%" title="Click on Create Image">
+  <img src="./images/017_CreateImage_1.png" width="70%" height="70%" title="Click on Create Image">
 
-<img src="./images/017_CreateImage_2.png" width="70%" height="70%" title="Create an Image Information Page">
+4. On the `Create an Image` page provide the information as shown below:
 
-## Step 15: Deploy the Scoring Web Service
+   a. Name: `nyc-taxi-automl`
+   
+   b. Description: `Predicting NYC Taxi Fares Image.`
+   
+   c. Runtime: `Python`
+   
+   d. Scoring File: `scoring.py` (upload the scoring script file you saved in Step #2)
+   
+   e. Conda File: `condaEnv.yml` (upload the environment script file you saved in Step #2)
 
-- Navigate to the `Images` section in your Azure Portal Workspace.
-- Select the image created in step #14
-- Confirm that the image creation succeeded.
-- Click on **Create Deployment**
-- On the `Create Deployment` page provide the information as shown below. We will deploy the scoring web service on an Azure Container Instance (ACI).
-- Click on **Create** button.
-- Creating a scoring web service can take upto 5 minutes.
-- Navigate to the `Deployments` section in your Azure Portal Workspace. Wait for the service to be ready before proceeding.
+5. Select **Create** button.
+6. Creating an image can take upto 5-10 minutes. Wait for the image to be created before proceeding.
 
-<img src="./images/018_CreateDeployment_1.png" width="70%" height="70%" title="Click on Create Deployment">
+  <img src="./images/017_CreateImage_2.png" width="70%" height="70%" title="Create an Image Information Page">
 
-<img src="./images/018_CreateDeployment_2.png" width="70%" height="70%" title="Create Deployment Information Page">
+## Step 4: Deploy the Scoring Web Service
 
-<img src="./images/018_CreateDeployment_3.png" width="70%" height="70%" title="Create Deployment Information Page">
+1. Navigate to the `Images` section in your Azure Portal Workspace
+2. Select the image created above: `nyc-taxi-automl`
+3. Confirm that the image creation succeeded
+4. Select **Create Deployment**
 
-## Step 16: Challenge Experiment
+  <img src="./images/018_CreateDeployment_1.png" width="70%" height="70%" title="Click on Create Deployment">
+
+5. On the `Create Deployment` page provide the information as shown below and then select **Create** button:
+
+   a. Name: `nyc-taxi-predictor`
+   
+   b. Description: `Predict NYC Taxi Fares!`
+   
+   c. Compute Type: `ACI` (We will deploy the scoring web service on an Azure Container Instance (ACI))
+
+  <img src="./images/018_CreateDeployment_2.png" width="70%" height="70%" title="Create Deployment Information Page">
+
+6. Creating a scoring web service can take upto 5 minutes.
+7. Navigate to the `Deployments` section in your Azure Portal Workspace. Wait for the service to be ready before proceeding.
+
+  <img src="./images/018_CreateDeployment_3.png" width="70%" height="70%" title="Create Deployment Information Page">
+
+# Exercise 7: Challenge Experiment
+
 In the current experiment, the pipeline of `MaxAbsScaler, RandomForest` gave us the best performing model with the spearman correlation score of: **0.934**. Can you expand the number of iterations for the Automated Machine Learning experiment to see if we can find a better performing model? Note that `Number of iterations` parameter is defined as follows: *In each iteration, a new machine learning model is trained with your data. This is the primary value that affects total run time.*
 
-## Step 17: Clean-up
+# Exercise 8: Clean-up
 
-- We are done using the `Compute` resource.
-- Navigate to the `Compute` tab and delete your compute target: `auto-ml-compute`
+1. Navigate to the `Compute` tab and delete your compute target: `auto-ml-compute`
 
-<img src="./images/013_DeleteCompute.png" width="70%" height="70%">
+  <img src="./images/013_DeleteCompute.png" width="70%" height="70%">
 
-## Step 18: Proceed to Part 2
+# Exercise 9: Proceed to Part 2
 
 - [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-2-automated-ml-with-azure-ml-python-sdk)
