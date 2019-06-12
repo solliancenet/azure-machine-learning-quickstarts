@@ -195,4 +195,4 @@ In the current experiment, the pipeline of `MaxAbsScaler, RandomForest` gave us 
 
 # Exercise 9: Proceed to Part 2
 
-1. [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-2-automated-ml-with-azure-ml-python-sdk)
+- [Automated ML with Azure ML Python SDK](../../quickstart-1.3#part-2-automated-ml-with-azure-ml-python-sdk)
