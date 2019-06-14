@@ -273,15 +273,15 @@
     
 ## Task 2: Observe Build Pipeline
 
-    ![Minor edit to piplines_master.py](images/46.png)
+   ![Minor edit to piplines_master.py](images/46.png)
     
-    ![Minor edit to piplines_master.py](images/47.png)
+   ![Minor edit to piplines_master.py](images/47.png)
 
 ## Task 3: Observe Release Pipeline
     
-    ![Minor edit to piplines_master.py](images/48.png)
+   ![Minor edit to piplines_master.py](images/48.png)
     
-    ![Minor edit to piplines_master.py](images/49.png)
+   ![Minor edit to piplines_master.py](images/49.png)
 
 ## Task 4: View 
 
