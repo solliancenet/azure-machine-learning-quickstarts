@@ -141,3 +141,26 @@
     
 ## Task 3: Add Tasks to "Deploy & Test" Stage
 
+1. Open **View stage tasks** link
+
+    ![Open view stage tasks link](images/24.png)
+
+2. Open **Variables** tab
+
+    ![Open variables tab](images/25.png)
+
+3. Add three Pipeline variables as name - value pairs:
+
+    a. Name: `aci_name` Value: `aci-cluster01`
+    
+    b. Name: `description` Value: `"Cost Estimator Web Service"` *note the double quotes around description value*
+    
+    c. Name: `service_name` Value: `cost-estimator-service`
+    
+        ![Add Pipeline variables](images/26.png)
+        
+4. Open **Tasks** tab
+
+    ![Open view stage tasks link](images/27.png)
+    
+5. 
