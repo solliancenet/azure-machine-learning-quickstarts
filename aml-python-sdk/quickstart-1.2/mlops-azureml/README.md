@@ -157,7 +157,7 @@
     
     c. Name: `service_name` Value: `cost-estimator-service`
     
-        ![Add Pipeline variables](images/26.png)
+      ![Add Pipeline variables](images/26.png)
         
 4. Open **Tasks** tab
 
