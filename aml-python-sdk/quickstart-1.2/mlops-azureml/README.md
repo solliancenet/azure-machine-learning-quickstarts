@@ -139,7 +139,7 @@
 
     ![Provide information to add the build artifact](images/23.png)
     
-## Task 3: Add Tasks to "Deploy & Test" Stage
+## Task 3: Add Variables to "Deploy & Test" Stage
 
 1. Open **View stage tasks** link
 
@@ -158,36 +158,60 @@
     c. Name: `service_name` Value: `cost-estimator-service`
     
       ![Add Pipeline variables](images/26.png)
+      
+## Task 4: Setup Agent Pool for "Deploy & Test" Stage
         
-4. Open **Tasks** tab
+1. Open **Tasks** tab
 
     ![Open view stage tasks link](images/27.png)
     
-5. Select **Agent job** and select **Agent pool** to be `Hosted Ubuntu 1604`
+2. Select **Agent job** and change **Agent pool** to `Hosted Ubuntu 1604`
 
     ![Change Agent pool to be Hosted Ubuntu 1604](images/28.png)
+    
+## Task 5: Add "Use Python Version" task
 
-6. Select **Add a task to Agent job**, search for `Use Python Version`, and select **Add**
+1. Select **Add a task to Agent job**, search for `Use Python Version`, and select **Add**
 
     ![Add Use Python Version task to Agent job](images/29.png)
 
-7. Provide Display name: `Use Python 3.6` and Version spec: `3.6`
+2. Provide **Display name:** `Use Python 3.6` and **Version spec:** `3.6`
 
     ![Provide Display name and Version spec](images/30.png)
+    
+## Task 6: Add "Install Requirements" task
 
-8. Select **Add a task to Agent job**, search for `bash`, and select **Add**
+1. Select **Add a task to Agent job**, search for `Bash`, and select **Add**
     
     ![Add Use Bash task to Agent job](images/31.png)
 
-9. Provide Display name: `Install Requirements` and select **object browser ...** to provide Script Path.
+2. Provide **Display name:** `Install Requirements` and select **object browser ...** to provide **Script Path**.
 
     ![Provide Display name](images/32.png)
 
-10. Navigate to **Linked artifacts/_mlops-quickstart/devops-for-ai/environment_setup** and select **install_requirements.sh**
+3. Navigate to **Linked artifacts/_mlops-quickstart/devops-for-ai/environment_setup** and select **install_requirements.sh**
 
     ![Provide Script Path](images/33.png)
 
-11.
+4. Expand **Advanced** and select **object browser ...** to provide **Working Directory**.
+
+    ![Expand advanced section](images/34.png)
+    
+5. Navigate to **Linked artifacts/_mlops-quickstart/devops-for-ai** and select **environment_setup**
+
+    ![Provide Working Directory](images/35.png)
+    
+## Task 7: Add  "Deploy & Test Webservice" task
+    
+1. Select **Add a task to Agent job**
+
+    ![Provide Working Directory](images/36_1.png)
+    
+2. Search for `Azure CLI`, and select **Add**
+
+    ![Add Azure CLI task](images/36_2.png)
+
+3. 
 
 
 
