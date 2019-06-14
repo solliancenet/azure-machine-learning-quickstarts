@@ -102,4 +102,42 @@
 
     ![Review information the eval_info json file](images/18.png)
 
+## Task 4: Review Build Outputs
+
+1. Log in to [Azure Portal](https://portal.azure.com). Open your **Resource Group, Workspace, Models** section, and observe the registered model: `cost-estimator`.
+
+    ![Review registered model in Azure Portal](images/19.png)
+
+2. Open your **Resource Group, Workspace, Images** section and observe the deployment image created during the build pipeline: `cost-estimator-image`.
+
+    ![Review deployment image in Azure Portal](images/18.png)
+    
+    
+# Exercise 3: Setup the Release Pipeline
+
+## Task 1: Create an Empty Job
+
+1. Navigate to **Pipelines, Releases** and select **New pipeline**
+
+    ![Create new Release Pipeline](images/19.png)
+
+2. Select **Empty job**
+
+    ![Select empty job](images/20.png)
+
+3. Provide Stage name: `Develop & Test` and close the dialog.
+
+    ![Provide stage name for the release stage](images/21.png)
+
+## Task 2: Add Build Artifact
+
+1. Select **Add an artifact**
+
+    ![Add an artifact](images/22.png)
+
+2. Select Source type: `Build`, Source (build pipeline): `mlops-quickstart`. *Observe the note that shows that the mlops-quickstart publishes the build artifact named devops-for-ai*. Finally, select **Add**
+
+    ![Provide information to add the build artifact](images/23.png)
+    
+## Task 3: Add Tasks to "Deploy & Test" Stage
 
