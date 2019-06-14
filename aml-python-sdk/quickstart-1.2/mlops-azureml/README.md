@@ -41,11 +41,11 @@
 
 1. From the left navigation select **Project settings** and then select **Service connections**
 
-  ![Open Service connections](images/07.png)
+    ![Open Service connections](images/07.png)
 
 2. Select **New service connection** and then select **Azure Resource Manager**
 
-  ![Open Azure Resource Manager](images/08.png)
+    ![Open Azure Resource Manager](images/08.png)
 
 3. Provide the following information in the `Add an Azure Resource Manager service connection` dialog box and then select **Ok**:
  
@@ -82,14 +82,24 @@
 
 1. Select **Run** to start running your build pipeline
 
-    ![Reivew the YAML file](images/14.png)
+    ![Start your build pipeline](images/14.png)
 
 2. Monitor the build run. The build pipeline will take around *10-12 minutes* to run.
 
-    ![Reivew the YAML file](images/15.png)
+    ![Monitor your build pipeline](images/15.png)
 
 ## Task 3: Review Build Artifacts
 
+1. The build will publish an artifact named `devops-for-ai`. Select **Artifacts, devops-for-ai** to review the artifact contents.
 
+    ![Select Artifacts, devops-for-ai to review the artifact contents](images/16.png)
+
+2. Select **outputs, eval_info.json** and then select **Download**. The `eval_info.json` is the output from the *model evaluation* step and the information from the evaluation step will be later used in the release pipeline to deploy the model.
+
+    ![Download output from the model evaluation step](images/17.png)
+
+3. Open the `eval_info.json` in a json viewer or a text editor and observe the information. The json output contains information such as if the model passed the evaluation step (`deploy_model`: *true or false*), and the name of the created image (`image_name`) to deploy.
+
+    ![Review information the eval_info json file](images/18.png)
 
 
