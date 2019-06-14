@@ -94,7 +94,7 @@
 
     ![Select Artifacts, devops-for-ai to review the artifact contents](images/16.png)
 
-2. Select **outputs, eval_info.json** and then select **Download**. The `eval_info.json` is the output from the *model evaluation* step and the information from the evaluation step will be later used in the release pipeline to deploy the model.
+2. Select **outputs, eval_info.json** and then select **Download**. The `eval_info.json` is the output from the *model evaluation* step and the information from the evaluation step will be later used in the release pipeline to deploy the model. Select **Close** to close the dialog.
 
     ![Download output from the model evaluation step](images/17.png)
 
