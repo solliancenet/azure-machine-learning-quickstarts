@@ -214,11 +214,14 @@
 3. Provide the following information for the Azure CLI task:
 
     a. Display name: `Deploy & Test Webservice`
+    
     b. Azure subscription: `quick-starts-sc` *This is the service connection we created in Exercise 1 / Task 4*
+    
     c. Script Location: `Inline script`
+    
     d. Inline Script: `python aml_service/deploy.py --service_name $(service_name) --aci_name $(aci_name) --description $(description)`
     
-    ![Setup Azure CLI task](images/38.png)
+      ![Setup Azure CLI task](images/38.png)
 
 4. Expand **Advanced** and provide **Working Directory:** `$(System.DefaultWorkingDirectory)/_mlops-quickstart/devops-for-ai`
 
