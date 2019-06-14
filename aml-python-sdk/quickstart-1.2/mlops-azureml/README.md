@@ -163,4 +163,21 @@
 
     ![Open view stage tasks link](images/27.png)
     
-5. 
+5. Select **Agent job** and select **Agent pool** to be `Hosted Ubuntu 1604`
+
+    ![Change Agent pool to be Hosted Ubuntu 1604](images/28.png)
+
+6. Select **Add a task to Agent job**, search for `Use Python Version`, and select **Add**
+
+7. Provide Display name: `Use Python 3.6` and Version spec: `3.6`
+
+8. Select **Add a task to Agent job**, search for `bash`, and select **Add**
+
+9. Provide Display name: `Install Requirements` and slect **...** to provide Script Path.
+
+10. Navigate to **Linked artifacts/_mlops-quickstart/devops-for-ai/environment_setup** and select **install_requirements.sh**
+
+
+
+
+
