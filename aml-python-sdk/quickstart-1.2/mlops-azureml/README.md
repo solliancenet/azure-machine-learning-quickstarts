@@ -169,13 +169,25 @@
 
 6. Select **Add a task to Agent job**, search for `Use Python Version`, and select **Add**
 
+    ![Add Use Python Version task to Agent job](images/29.png)
+
 7. Provide Display name: `Use Python 3.6` and Version spec: `3.6`
 
-8. Select **Add a task to Agent job**, search for `bash`, and select **Add**
+    ![Provide Display name and Version spec](images/30.png)
 
-9. Provide Display name: `Install Requirements` and slect **...** to provide Script Path.
+8. Select **Add a task to Agent job**, search for `bash`, and select **Add**
+    
+    ![Add Use Bash task to Agent job](images/31.png)
+
+9. Provide Display name: `Install Requirements` and select **object browser ...** to provide Script Path.
+
+    ![Provide Display name](images/32.png)
 
 10. Navigate to **Linked artifacts/_mlops-quickstart/devops-for-ai/environment_setup** and select **install_requirements.sh**
+
+    ![Provide Script Path](images/33.png)
+
+11.
 
 
 
