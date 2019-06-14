@@ -139,7 +139,7 @@
 
     ![Provide information to add the build artifact](images/23.png)
     
-## Task 3: Add Variables to "Deploy & Test" Stage
+## Task 3: Add Variables to *Deploy & Test* stage
 
 1. Open **View stage tasks** link
 
@@ -159,7 +159,7 @@
     
       ![Add Pipeline variables](images/26.png)
       
-## Task 4: Setup Agent Pool for "Deploy & Test" Stage
+## Task 4: Setup Agent Pool for *Deploy & Test* stage
         
 1. Open **Tasks** tab
 
@@ -169,7 +169,7 @@
 
     ![Change Agent pool to be Hosted Ubuntu 1604](images/28.png)
     
-## Task 5: Add "Use Python Version" task
+## Task 5: Add *Use Python Version* task
 
 1. Select **Add a task to Agent job**, search for `Use Python Version`, and select **Add**
 
@@ -179,7 +179,7 @@
 
     ![Provide Display name and Version spec](images/30.png)
     
-## Task 6: Add "Install Requirements" task
+## Task 6: Add *Install Requirements* task
 
 1. Select **Add a task to Agent job**, search for `Bash`, and select **Add**
     
@@ -201,7 +201,7 @@
 
     ![Provide Working Directory](images/35.png)
     
-## Task 7: Add  "Deploy & Test Webservice" task
+## Task 7: Add *Deploy & Test Webservice* task
     
 1. Select **Add a task to Agent job**
 
