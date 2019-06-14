@@ -12,7 +12,7 @@
 
   ![Provide Project Name](images/02.png)
 
-## Task 2: Import the Github Repo
+## Task 2: Import Quickstart code from a Github Repo
 
 1. Within the new project:
 
