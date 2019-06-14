@@ -252,6 +252,39 @@
 
     ![Save the Release Pipeline](images/42.png)
 
+3. Select: **Ok**
+
+    ![Select Ok](images/43.png)
+    
+# Exercise 4: Test Build and Release Pipelines
+
+## Task 1: Make Edits to Source Code
+
+1. Navigate to: **Repos -> Files -> aml_service -> pipelines_master.py**
+2. **Edit** `pipelines_master.py`
+3. Make a minor edit. For example, change `print("In piplines_master.py")` to `print("In piplines_master")`
+4. Select **Commit**
+
+    ![Minor edit to piplines_master.py](images/44.png)
+    
+5. Provide comment: `Small edit to pipelines_master.py` and select **Commit**
+
+    ![Minor edit to piplines_master.py](images/45.png)
+    
+## Task 2: Observe Build Pipeline
+
+    ![Minor edit to piplines_master.py](images/46.png)
+    
+    ![Minor edit to piplines_master.py](images/47.png)
+
+## Task 3: Observe Release Pipeline
+    
+    ![Minor edit to piplines_master.py](images/48.png)
+    
+    ![Minor edit to piplines_master.py](images/49.png)
+
+## Task 4: View 
+
 
 
 
