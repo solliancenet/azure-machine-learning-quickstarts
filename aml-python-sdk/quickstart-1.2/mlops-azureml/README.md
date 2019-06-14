@@ -29,10 +29,9 @@
 ## Task 3: Update the build YAML file
 
 1. Select and open the `azure-pipelines.yml` file
+2. Select **Edit** and update the following variables: `resourcegroup`, `workspace` and `location`. If you are using your own Azure subscription, please provide names to use. If an environment is provided to you be sure to replace XXXXX in the values below with your unique identifier and update the `location` variable.
 
   ![Open build YAML file](images/05.png)
-
-2. Select **Edit** and update the following variables: `resourcegroup`, `workspace` and `location`. If you are using your own Azure subscription, please provide names to use. If an environment is provided to you be sure to replace XXXXX in the values below with your unique identifier and update the `location` variable.
 
 3. Select **Commit** to save your changes.
 
