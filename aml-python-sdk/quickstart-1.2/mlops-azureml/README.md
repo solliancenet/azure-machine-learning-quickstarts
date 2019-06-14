@@ -20,11 +20,11 @@
    
    b. Select **Import** from the content section
    
-    ![Provide Project Name](images/03.png)
+    ![Import Quickstart code from a Github Repo](images/03.png)
    
-2. Provide the following Git URL: `https://github.com/solliancenet/mlops-starter.git` and select **Import**. This should import the code required for the quickstart.
+2. Provide the following Github URL: `https://github.com/solliancenet/mlops-starter.git` and select **Import**. This should import the code required for the quickstart.
 
-  ![Provide Project Name](images/04.png)
+  ![Provide the Github URL](images/04.png)
 
 ## Task 3: Update the build YAML file
 
@@ -56,7 +56,7 @@
    
    c. Resource Group: This value should match the value you provided in the `azure-pipelines.yml` file
    
-   ![Add an Azure Resource Manager service connection](images/08.png)
+   ![Add an Azure Resource Manager service connection](images/09.png)
 
 
 # Exercise 2: Setup Build Pipeline
