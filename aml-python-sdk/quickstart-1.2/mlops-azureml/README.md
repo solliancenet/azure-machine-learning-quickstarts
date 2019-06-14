@@ -57,3 +57,7 @@
    c. Resource Group: This value should match the value you provided in the `azure-pipelines.yml` file
    
    ![Add an Azure Resource Manager service connection](images/08.png)
+
+
+# Exercise 2: Setup Build Pipeline
+
