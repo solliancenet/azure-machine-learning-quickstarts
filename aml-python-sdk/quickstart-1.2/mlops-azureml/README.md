@@ -139,7 +139,7 @@
 
     ![Provide information to add the build artifact](images/23.png)
     
-## Task 3: Add Variables to *Deploy & Test* stage
+## Task 3: Add Variables to Deploy & Test stage
 
 1. Open **View stage tasks** link
 
@@ -159,7 +159,7 @@
     
       ![Add Pipeline variables](images/26.png)
       
-## Task 4: Setup Agent Pool for *Deploy & Test* stage
+## Task 4: Setup Agent Pool for Deploy & Test stage
         
 1. Open **Tasks** tab
 
@@ -169,7 +169,7 @@
 
     ![Change Agent pool to be Hosted Ubuntu 1604](images/28.png)
     
-## Task 5: Add *Use Python Version* task
+## Task 5: Add Use Python Version task
 
 1. Select **Add a task to Agent job**, search for `Use Python Version`, and select **Add**
 
@@ -179,7 +179,7 @@
 
     ![Provide Display name and Version spec](images/30.png)
     
-## Task 6: Add *Install Requirements* task
+## Task 6: Add Install Requirements task
 
 1. Select **Add a task to Agent job**, search for `Bash`, and select **Add**
     
@@ -201,7 +201,7 @@
 
     ![Provide Working Directory](images/35.png)
     
-## Task 7: Add *Deploy & Test Webservice* task
+## Task 7: Add Deploy & Test Webservice task
     
 1. Select **Add a task to Agent job**
 
@@ -211,7 +211,43 @@
 
     ![Add Azure CLI task](images/36_2.png)
 
-3. 
+3. Provide the following information for the Azure CLI task:
+
+    a. Display name: `Deploy & Test Webservice`
+    b. Azure subscription: `quick-starts-sc` *This is the service connection we created in Exercise 1 / Task 4*
+    c. Script Location: `Inline script`
+    d. Inline Script: `python aml_service/deploy.py --service_name $(service_name) --aci_name $(aci_name) --description $(description)`
+    
+    ![Setup Azure CLI task](images/38.png)
+
+4. Expand **Advanced** and provide **Working Directory:** `$(System.DefaultWorkingDirectory)/_mlops-quickstart/devops-for-ai`
+
+    ![Provide Working Directory](images/39.png)
+    
+## Task 8: Define Deployment Trigger
+
+1. Navigate to **Pipeline** tab, and select **Pre-deployment conditions** for the `Deploy & Test` stage
+2. Select **After release**
+
+    ![Setup Pre-deployment conditions](images/40.png)
+
+3. Close the dialog
+
+## Task 9: Enable Continuous Deployment Trigger
+
+1. Select **Continuous deployment trigger** for `_mlops-quickstart` artifact
+2. Enable: **Creates a release every time a new build is available.**
+
+    ![Enable Continuous Deployment Trigger](images/41.png)
+    
+3. Close the dialog
+
+## Task 10: Save the Release Pipeline
+
+1. Provide name: `mlops-quickstart-release`
+2. Select: **Save**
+
+    ![Save the Release Pipeline](images/42.png)
 
 
 
