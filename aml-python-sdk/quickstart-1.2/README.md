@@ -13,7 +13,7 @@ The goal of this quickstart is to build a simple use case that shows how you can
 
 In Azure DevOps we will build two pipelines:
 
-## 1. Build CI/CD Pipeline
+## 1. CI Build Pipeline
 
 The build pipeline will consists of the following key tasks:
 
