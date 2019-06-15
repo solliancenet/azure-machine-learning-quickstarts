@@ -10,6 +10,8 @@
 
 - [Exercise 4: Test Build and Release Pipelines](#Exercise-4-Test-Build-and-Release-Pipelines)
 
+- [Exercise 5: Challenge – Add a New Task to Release Pipeline](#Exercise-5-Challenge-Add-a-New-Task-to-Release-Pipeline)
+
 
 # Exercise 1: Setup New Project in Azure DevOps
 
@@ -316,7 +318,7 @@
     ![Deployed webservice in Azure Portal](images/52.png)
 
 
-
+# Exercise 5: Challenge – Add a New Task to Release Pipeline 
 
 
 
