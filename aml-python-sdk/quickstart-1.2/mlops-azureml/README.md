@@ -4,6 +4,12 @@
 
 - [Exercise 1: Setup New Project in Azure DevOps](#Exercise-1-Setup-New-Project-in-Azure-DevOps)
 
+- [Exercise 2: Setup and Run the Build Pipeline](Exercise-2-Setup-and-Run-the-Build-Pipeline)
+
+-[Exercise 3: Setup the Release Pipeline](Exercise-3-Setup-the-Release-Pipeline)
+
+-[Exercise 4: Test Build and Release Pipelines](Exercise-4-Test-Build-and-Release-Pipelines)
+
 
 # Exercise 1: Setup New Project in Azure DevOps
 
