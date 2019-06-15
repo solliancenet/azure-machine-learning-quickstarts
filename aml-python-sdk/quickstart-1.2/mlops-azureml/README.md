@@ -1,4 +1,4 @@
-# MLOps with Azure Machine Learning Service and Azure DevOps
+# MLOps with Azure Machine Learning and Azure DevOps
 
 ## Contents
 
