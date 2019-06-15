@@ -106,11 +106,11 @@
 
 1. Log in to [Azure Portal](https://portal.azure.com). Open your **Resource Group, Workspace, Models** section, and observe the registered model: `cost-estimator`.
 
-    ![Review registered model in Azure Portal](images/19.png)
+    ![Review registered model in Azure Portal](images/53.png)
 
 2. Open your **Resource Group, Workspace, Images** section and observe the deployment image created during the build pipeline: `cost-estimator-image`.
 
-    ![Review deployment image in Azure Portal](images/18.png)
+    ![Review deployment image in Azure Portal](images/54.png)
     
     
 # Exercise 3: Setup the Release Pipeline
