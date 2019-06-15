@@ -271,19 +271,39 @@
 
     ![Minor edit to piplines_master.py](images/45.png)
     
-## Task 2: Observe Build Pipeline
+## Task 2: Monitor Build Pipeline
 
-   ![Minor edit to piplines_master.py](images/46.png)
-    
-   ![Minor edit to piplines_master.py](images/47.png)
+1. Navigate to **Pipelines, Builds**. Observe that the CI build is triggered because of the source code change. 
 
-## Task 3: Observe Release Pipeline
+   ![CI Build Pipeline](images/46.png)
+   
+2. Select the pipeline run and monitor the pipeline steps. The pipeline will run for 10-12 minutes. Proceed to the next task when the build pipeline successfully completes.
     
-   ![Minor edit to piplines_master.py](images/48.png)
-    
-   ![Minor edit to piplines_master.py](images/49.png)
+   ![CI Build Pipeline steps](images/47.png)
 
-## Task 4: View 
+## Task 3: Monitor Release Pipeline
+
+1. Navigate to **Pipelines, Releases**. Observe that the Release pipeline is automatically trigger upon successful completion of the build pipeline. Select as shown in the figure to view pipeline logs. 
+    
+   ![Release pipeline](images/48.png)
+   
+2. The release pipeline will run for 5-6 minutes. Proceed to the next task when the release pipeline successfully completes.
+
+## Task 4: Review Release Pipeline Outputs
+
+1. From the pipeline logs view, select **Deploy & Test Webservice** task to view details.
+
+    ![Release pipeline logs](images/50.png)
+    
+2. Observe the **Scoring URI** and test results for the deployed webservice.
+
+    ![Scoring URI of the deployed webservice](images/51.png)
+
+3. Log in to Azure Portal. Open your **Resource Group, Workspace, Deployments** section, and observe the deployed webservice: **cost-estimator-service**.
+
+    ![Deployed webservice in Azure Portal](images/52.png)
+
+
 
 
 
