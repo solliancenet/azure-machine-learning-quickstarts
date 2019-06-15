@@ -8,6 +8,7 @@ You can learn more about MLOps and how to use Azure Machine Learning service to 
 
 # Quickstart Overview
 
+The goal of this quickstart is to build a simple use case that shows how you can operationalize your machine learning models that leverages the [Azure DevOps Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml), [Azure ML CLI](https://docs.microsoft.com/en-us/azure/machine-learning/service/reference-azure-machine-learning-cli), and [Azure Machine Learning Pipelines](https://docs.microsoft.com/en-us/python/api/azureml-pipeline-core/azureml.pipeline.core?view=azure-ml-py) that integrate with [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) CI/CD and deployment workflows.
 
 ## Before you begin
 
