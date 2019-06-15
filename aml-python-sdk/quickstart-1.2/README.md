@@ -2,6 +2,9 @@
 
 ## What is MLOps?
 
+MLOps, also known as DevOps for machine learning, is the practice of collaboration and communication between data scientists and DevOps professionals to help manage the production of the machine learning lifecycle.
+
+You can learn more about MLOps and how to use Azure Machine Learning service to manage the model lifecycles at: [MLOps: Manage, deploy, and monitor models with Azure Machine Learning Service](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-model-management-and-deployment)
 
 # Quickstart Overview
 
