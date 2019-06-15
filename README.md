@@ -20,7 +20,7 @@ The goal of this quickstart is to build machine learning pipelines using Azure M
 
 ### 1.2 [MLOps with Azure Machine Learning Service and Azure DevOps](./aml-python-sdk/quickstart-1.2/README.md)
 
-The goal of this quickstart is to build a simple use case that shows how you can operationalize your machine learning models that leverages the [Azure DevOps Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml), [Azure ML CLI](https://docs.microsoft.com/en-us/azure/machine-learning/service/reference-azure-machine-learning-cli), and [Azure Machine Learning Pipelines](https://docs.microsoft.com/en-us/python/api/azureml-pipeline-core/azureml.pipeline.core?view=azure-ml-py) that integrate with [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) CI/CD and deployment workflows.
+The goal of this quickstart is to build a simple use case that shows how you can operationalize your machine learning models that leverages the Azure DevOps Machine Learning extension, CLI extension for Azure Machine Learning service, and Azure Machine Learning Pipelines that integrate with Azure DevOps CI/CD and deployment workflows.
 
 ### 1.3 [Automated Machine Learning](./aml-python-sdk/quickstart-1.3/README.md)
 
