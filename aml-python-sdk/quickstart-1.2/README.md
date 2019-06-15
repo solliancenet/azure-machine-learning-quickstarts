@@ -31,7 +31,7 @@ The build pipeline will consists of the following key tasks:
 
 - The deployment stage will consists of the following key tasks:
 
-  - **Operationalize Model**: If the model passed the evaluation criteria then deploy it to Azure Container Instance (ACI).
+  - **Operationalize Model**: If the model passed the evaluation criteria then deploy the registered image to an Azure Container Instance (ACI).
 
   - **Test Model**: Test the model deployment calling the service end point (Scoring URI) over http.
 
