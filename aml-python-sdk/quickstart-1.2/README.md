@@ -17,11 +17,11 @@ In Azure DevOps we will build two pipelines:
 
 The build pipeline will consists of the following key tasks:
 
-- Train Model: run the training algorithm and register the model with Azure ML Model registry.
+- **Train Model**: run the training algorithm and register the model with Azure ML Model registry.
 
-- Evaluate Model: evaluate the model performance and make a determination if the new model performance meets the established criteria. If the model passes the performance criteria, package the model and register the deployment image with Azure ML Image registry.
+- **Evaluate Model**: evaluate the model performance and make a determination if the new model performance meets the established criteria. If the model passes the performance criteria, package the model and register the deployment image with Azure ML Image registry.
 
-- Publish build artifacts: publish results generated in the Evaluate step to be made available as part of the Release Pipeline.
+- **Publish Build Artifacts**: publish results generated in the Evaluate step to be made available as part of the Release Pipeline.
 
 ## 2. Release / Deployment Pipeline
 
@@ -31,9 +31,9 @@ The build pipeline will consists of the following key tasks:
 
 - The deployment stage will consists of the following key tasks:
 
-  - Operationalize the model if it model passed the evaluation criteria by deploying it to Azure Container Instance (ACI).
+  - **Operationalize Model**: If the model passed the evaluation criteria then deploy it to Azure Container Instance (ACI).
 
-  - Test the deployed model.
+  - **Test Model**: Test the model deployment calling the service end point (Scoring URI) over http.
 
 
 ## Before you begin
