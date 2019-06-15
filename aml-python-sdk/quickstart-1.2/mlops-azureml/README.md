@@ -1,3 +1,9 @@
+# MLOps with Azure Machine Learning Service and Azure DevOps
+
+## Contents
+
+- [Exercise 1: Setup New Project in Azure DevOps](#Exercise-1-Setup-New-Project-in-Azure-DevOps)
+
 
 # Exercise 1: Setup New Project in Azure DevOps
 
