@@ -36,10 +36,8 @@ The build pipeline will consists of the following key tasks:
   - **Test Model**: Test the model deployment calling the service end point (Scoring URI) over http.
 
 
-## Before you begin
+# Next Steps
 
-Sign in to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) using the same sign in as your [Azure subscription](https://azure.microsoft.com/en-us/).
-
-## MLOps with Azure Machine Learning Service and Azure DevOps
+- Sign in to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) using the same sign in as your [Azure subscription](https://azure.microsoft.com/en-us/).
 
 - Follow instructions at: [MLOps with Azure ML](./mlops-azureml/README.md)
