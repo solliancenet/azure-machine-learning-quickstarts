@@ -4,7 +4,7 @@
 
 - [Exercise 1: Setup New Project in Azure DevOps](#Exercise-1-Setup-New-Project-in-Azure-DevOps)
 
-- [Exercise 2: Setup and Run the Build Pipeline](#Exercise-2-Setup-and-Run-the-Build-Pipeline)
+- [Exercise 2: Setup and Run the CI/CD Build Pipeline](#Exercise-2-Setup-and-Run-the-CI/CD-Build-Pipeline)
 
 - [Exercise 3: Setup the Release Pipeline](#Exercise-3-Setup-the-Release-Pipeline)
 
@@ -72,7 +72,7 @@
     ![Add an Azure Resource Manager service connection](images/09.png)
 
 
-# Exercise 2: Setup and Run the Build Pipeline
+# Exercise 2: Setup and Run the CI/CD Build Pipeline
 
 ## Task 1: Setup Build Pipeline
 
