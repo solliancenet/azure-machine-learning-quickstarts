@@ -98,7 +98,7 @@
 
     ![Start your build pipeline](images/14.png)
 
-2. Monitor the build run. The build pipeline will take around *10-12 minutes* to run.
+2. Monitor the build run. The build pipeline, for the first run, will take around *15-20 minutes* to run.
 
     ![Monitor your build pipeline](images/15.png)
 
@@ -131,7 +131,7 @@
 
 ## Task 1: Create an Empty Job
 
-1. Navigate to **Pipelines, Releases** and select **New pipeline**
+1. Return to Azure DevOps and navigate to **Pipelines, Releases** and select **New pipeline**
 
     ![Create new Release Pipeline](images/19.png)
 
@@ -139,7 +139,7 @@
 
     ![Select empty job](images/20.png)
 
-3. Provide Stage name: `Develop & Test` and close the dialog.
+3. Provide Stage name: `Deploy & Test` and close the dialog.
 
     ![Provide stage name for the release stage](images/21.png)
 
@@ -163,7 +163,7 @@
 
     ![Open variables tab](images/25.png)
 
-3. Add three Pipeline variables as name - value pairs:
+3. Add three Pipeline variables as name - value pairs and then select **Save**:
 
     a. Name: `aci_name` Value: `aci-cluster01`
     
