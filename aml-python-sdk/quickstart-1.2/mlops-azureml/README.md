@@ -322,4 +322,4 @@
 
 Create a new task in the **Deploy and Test** deployment process to test the deployed webservice by making HTTP post requests to the webservice scoring URI. Please review the code `mlops-quickstart/aml_service/deploy.py` and note that it saves the deployed webservice scoring URI in a file: **./outputs/aci_webservice.json**. You can use the same arrays `data1` and `data2` as in `deploy.py` as inputs to test the webservice.
 
-You can download the solution at the following links: [select to download test.py] and [select to download task instructions]. Save the `test.py` file in `mlops-quickstart/aml_service` folder.
+You can download the solution at the following links: [select to download test.py](https://quickstartsws9073123377.blob.core.windows.net/azureml-blobstore-0d1c4218-a5f9-418b-bf55-902b65277b85/quickstarts/mlops-challenge/test.py) and [select to download task instructions](https://quickstartsws9073123377.blob.core.windows.net/azureml-blobstore-0d1c4218-a5f9-418b-bf55-902b65277b85/quickstarts/mlops-challenge/challenge-instructions.png). Save the `test.py` file in `mlops-quickstart/aml_service` folder.
