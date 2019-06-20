@@ -35,6 +35,14 @@ Compute-VM
 
 2. Once the setup is done, you can then follow the steps as outlined for each of other quickstarts.
 
+
+# Quickstart: Azure Notebook VMs
+
+1. Please follow the steps outlined in [Azure Notebook VM Setup](./azure-notebook-vm-setup) before continuing. 
+
+2. Once the setup is done, you can then follow the steps as outlined for each of other quickstarts.
+
+
 # Quickstart: Visual Studio Code
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview) on your machine.
