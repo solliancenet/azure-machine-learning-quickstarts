@@ -42,6 +42,8 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
    c. `git clone https://github.com/solliancenet/azure-machine-learning-quickstarts.git`
    
    ![Clone Github Repository](images/05.png)
+   
+   d. Wait for the import to complete.
 
 
 ## Task 3: Update your Notebook Environment 
