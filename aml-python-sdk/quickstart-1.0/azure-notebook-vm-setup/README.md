@@ -14,11 +14,11 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 2. Select **Notebook VMs** in the left navigation and then select **New**
 
-  ![Select Create New Notebook VM in Azure Portal](images/01.png)
+   ![Select Create New Notebook VM in Azure Portal](images/01.png)
 
 3. Provide Name: `quick-starts-vm` and Virtual machine size: `STANDARD_D3_V2` and then select **Create**
 
-  ![Create New Notebook VM](images/02.png)
+   ![Create New Notebook VM](images/02.png)
   
 4. Wait for the VM to be ready, it will take around 5-10 minutes.
 
@@ -27,11 +27,11 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 1. Select the Notebook VM: **quick-starts-vm** and then select **Jupyter** open icon, to open Jupyter Notebooks interface.
 
-  ![Open Jupyter Notebooks Interface](images/03.png)
+   ![Open Jupyter Notebooks Interface](images/03.png)
 
 2. Select **New, Terminal** as shown to open the terminal page.
 
-  ![Open Terminal Page](images/04.png)
+   ![Open Terminal Page](images/04.png)
   
 3. Run the following commands in order in the terminal window:
 
@@ -41,7 +41,7 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
    
    c. `git clone https://github.com/solliancenet/azure-machine-learning-quickstarts.git`
    
-   ![Clone Github Repository](images/05.png)
+      ![Clone Github Repository](images/05.png)
    
    d. Wait for the import to complete.
 
@@ -50,7 +50,7 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 1.  From the Jupyter Notebooks interface, navigate to the `quick-starts->azure-machine-learning-quickstarts->aml-python-sdk->starter-artifacts->nbvm-notebooks` folder where you will find all your quickstart files.
 
-  ![Find your QuickStart Notebooks](images/06.png)
+   ![Find your QuickStart Notebooks](images/06.png)
 
 2. Open notebook: **00-aml-setup/00-aml-setup.ipynb**
 
