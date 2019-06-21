@@ -24,7 +24,7 @@ The goal of this quickstart is to build a simple use case that shows how you can
 
 ### 1.3 [Automated Machine Learning](./aml-python-sdk/quickstart-1.3/README.md)
 
-In this quickstart, you will learn how to create, train, evaluate, and deploy automated machine learning models in the Azure portal without a single line of code.
+This quickstart consists of two parts. In the first part, you learn how to create, run, and explore automated machine learning experiments in the Azure portal without a single line of code. In the second part, you will use compute resources provided by Azure Machine Learning service to remotely train a set of models using Automated Machine Learning using Azure ML Python SDK.
 
 ### 1.4 [Deep Learning with Azure Machine Learning](./aml-python-sdk/quickstart-1.4/README.md)
 
