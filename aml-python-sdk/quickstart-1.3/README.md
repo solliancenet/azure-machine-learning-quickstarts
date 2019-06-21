@@ -26,7 +26,7 @@ In the second part, you will use compute resources provided by Azure Machine Lea
 
 In this quickstart, for both parts, we will be building a regression model to predict Taxi Fares in New York City. We will use a preprocessed labeled training data with features such as number of passengers, trip distance, datetime, holiday information and weather information.
 
-## Part 1: Automated Machine Learning with Visual Interface
+## Part 1: Automated Machine Learning in Azure Portal
 
 - Follow instructions at: [AutoML in Azure Portal](./automl-azure-portal/README.md)
 
