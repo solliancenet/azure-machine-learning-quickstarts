@@ -38,6 +38,8 @@ The build pipeline will consists of the following key tasks:
 
 # Next Steps
 
+- If you are using your own Azure subscription. Create an Azure Machine Learning service workspace named: `quick-starts-ws`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
+
 - Sign in to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) using the same sign in as your [Azure subscription](https://azure.microsoft.com/en-us/).
 
 - Follow instructions at: [MLOps with Azure ML](./mlops-azureml/README.md)
