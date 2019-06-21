@@ -15,12 +15,12 @@
 3. Select **Create Experiment** from the content section
 4. This will open a `Create a new automated machine learning experiment` page
 
-  <img src="./images/02_CreateExperiment.png" width="70%" height="70%" title="Create new experiment">
+   <img src="./images/02_CreateExperiment.png" width="70%" height="70%" title="Create new experiment">
 
 5. Provide an experiment name: `auto-ml-exp`
 6. Select **Create a new compute**
 
-  <img src="./images/03_NewExperiment_1.png" width="70%" height="70%"  title="Provide experiment name and click on compute">
+   <img src="./images/03_NewExperiment_1.png" width="70%" height="70%"  title="Provide experiment name and click on compute">
 
 ## Task 2: Create New Compute
 
@@ -36,7 +36,7 @@
 5. Wait for compute to be ready. This may take 2-3 minutes.
 6. Select **Next**
 
-  <img src="./images/04_CreateNewCompute.png" width="70%" height="70%" title="Create new compute">
+   <img src="./images/04_CreateNewCompute.png" width="70%" height="70%" title="Create new compute">
 
 # Exercise 2: Upload and Review Training Data
 
@@ -65,7 +65,7 @@
 2. Select Target column: **totalAmount**
 3. Open **Advanced Settings**
 
-  <img src="./images/07_SetupExp_1.png" width="70%" height="70%" title="Setup experiment basic settings">
+   <img src="./images/07_SetupExp_1.png" width="70%" height="70%" title="Setup experiment basic settings">
 
 ## Task 2: Advanced Settings
 
@@ -74,7 +74,7 @@
 3. Select Number of Cross Validations: **5**
 4. Select Max concurrent iterations: **1**
 
-  <img src="./images/08_SetupExp_2.png" width="70%" height="70%" title="Setup experiment advanced settings">
+   <img src="./images/08_SetupExp_2.png" width="70%" height="70%" title="Setup experiment advanced settings">
 
 # Exercise 4: Start and Monitor Experiment
 
@@ -82,14 +82,14 @@
 
 1. Scroll down and select **Start** to run the experiment
 
-  <img src="./images/09_StartExp.png" width="70%" height="70%" title="Start Experiment">
+   <img src="./images/09_StartExp.png" width="70%" height="70%" title="Start Experiment">
 
 ## Task 2: Monitor Experiment
 
 1. The experiment will run for about *5-10 min*
 2. In the **Run Details** screen, observe the performance of the various models for the primary metric: **spearman_correlation**
 
-  <img src="./images/09_ReviewRunDetails_1.png" width="70%" height="70%" title="Review run details - graph view">
+   <img src="./images/09_ReviewRunDetails_1.png" width="70%" height="70%" title="Review run details - graph view">
   
 3. Scroll down to see a table view of different iterations
 4. Wait for the experiment to complete
@@ -100,24 +100,24 @@
 
 1. From the table view, select the iteration with the best **spearman_correlation** score. Note that the spearman_correlation measures the monotonic relationships between the predicted value and actual value. In this case, the model with spearman_correlation score closest to 1 is the best model.
 
-  <img src="./images/010_ReviewRunDetails_2.png" width="70%" height="70%" title="Review run details - table view">
+   <img src="./images/010_ReviewRunDetails_2.png" width="70%" height="70%" title="Review run details - table view">
   
 2. Review **Predicted Taxi Fare vs True Taxi Fare** for your model
 
-  <img src="./images/011_ReviewPredictions.png" width="70%" height="70%" title="Review Best Model Predictions">
+   <img src="./images/011_ReviewPredictions.png" width="70%" height="70%" title="Review Best Model Predictions">
 
 ## Task 2: Review Best Model Metrics
 
 1. Scroll down to review various performance metrics for your model
 
-  <img src="./images/012_ReviewMetrics.png" width="70%" height="70%" title="Review Best Model Metrics">
+   <img src="./images/012_ReviewMetrics.png" width="70%" height="70%" title="Review Best Model Metrics">
 
 # Exercise 6: Deploy Best Model
 
 1. Return to `Run Details` screen
 2. Select **Deploy Best Model** as shown
 
-  <img src="./images/014_DeployBestModel.png" width="70%" height="70%" title="Deploy Best Model">
+   <img src="./images/014_DeployBestModel.png" width="70%" height="70%" title="Deploy Best Model">
   
 Note that deployment process consists of four steps: (1) *Register Best Model*, (2) Download *Scoring and Environment Script files*, (3) Create *Deployment Image* using the downloaded script files, and (4) Deploy *Scoring Web Service* using the created image.
 
@@ -125,14 +125,14 @@ Note that deployment process consists of four steps: (1) *Register Best Model*, 
 
 1. Select **Register Model** link.
 
-  <img src="./images/015_RegisterModel.png" width="70%" height="70%" title="Register Best Model">
+   <img src="./images/015_RegisterModel.png" width="70%" height="70%" title="Register Best Model">
 
 ## Step 2: Download the Script Files
 
 1. Select **Download Scoring Script** link. This will download `scoring.py` file to your local disk.
 2. Select **Download Environment Script** link. This will download `condaEnv.yml` file to your local disk.
 
-<img src="./images/016_DownloadScripts.png" width="70%" height="70%" title="Download the Script Files">
+   <img src="./images/016_DownloadScripts.png" width="70%" height="70%" title="Download the Script Files">
 
 ## Step 3: Create the Deployment Image
 
@@ -140,7 +140,7 @@ Note that deployment process consists of four steps: (1) *Register Best Model*, 
 2. Select the `Registered Model`
 3. Select **Create Image**
 
-  <img src="./images/017_CreateImage_1.png" width="70%" height="70%" title="Click on Create Image">
+   <img src="./images/017_CreateImage_1.png" width="70%" height="70%" title="Click on Create Image">
 
 4. On the `Create an Image` page provide the information as shown below:
 
@@ -157,7 +157,7 @@ Note that deployment process consists of four steps: (1) *Register Best Model*, 
 5. Select **Create** button.
 6. Creating an image can take upto 5-10 minutes. Wait for the image to be created before proceeding.
 
-  <img src="./images/017_CreateImage_2.png" width="70%" height="70%" title="Create an Image Information Page">
+   <img src="./images/017_CreateImage_2.png" width="70%" height="70%" title="Create an Image Information Page">
 
 ## Step 4: Deploy the Scoring Web Service
 
@@ -166,7 +166,7 @@ Note that deployment process consists of four steps: (1) *Register Best Model*, 
 3. Confirm that the image creation succeeded
 4. Select **Create Deployment**
 
-  <img src="./images/018_CreateDeployment_1.png" width="70%" height="70%" title="Click on Create Deployment">
+   <img src="./images/018_CreateDeployment_1.png" width="70%" height="70%" title="Click on Create Deployment">
 
 5. On the `Create Deployment` page provide the information as shown below and then select **Create** button:
 
@@ -176,12 +176,12 @@ Note that deployment process consists of four steps: (1) *Register Best Model*, 
    
    c. Compute Type: `ACI` (We will deploy the scoring web service on an Azure Container Instance (ACI))
 
-  <img src="./images/018_CreateDeployment_2.png" width="70%" height="70%" title="Create Deployment Information Page">
+      <img src="./images/018_CreateDeployment_2.png" width="70%" height="70%" title="Create Deployment Information Page">
 
 6. Creating a scoring web service can take upto 5 minutes.
 7. Navigate to the `Deployments` section in your Azure Portal Workspace. Wait for the service to be ready before proceeding.
 
-  <img src="./images/018_CreateDeployment_3.png" width="70%" height="70%" title="Create Deployment Information Page">
+   <img src="./images/018_CreateDeployment_3.png" width="70%" height="70%" title="Create Deployment Information Page">
 
 # Exercise 7: Challenge Experiment
 
@@ -191,4 +191,4 @@ In the current experiment, the pipeline of `MaxAbsScaler, RandomForest` gave us 
 
 1. Navigate to the `Compute` section in your Azure Portal Workspace and delete your compute target: `auto-ml-compute`
 
-  <img src="./images/013_DeleteCompute.png" width="70%" height="70%">
+   <img src="./images/013_DeleteCompute.png" width="70%" height="70%">
