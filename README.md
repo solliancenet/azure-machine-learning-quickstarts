@@ -38,6 +38,10 @@ In this quickstart, your will convert a Deep Learning model you trained in [quic
 
 The goal of this quickstart is to show Model interpretability with Azure Machine Learning service. You will learn how to explain why your model made the prediction it made by using the Azure Machine Learning Interpretability SDK. You will learn to understand both global and local explainability of your model. Finally, you will also learn how to deploy the explainer along with the model to be used at scoring time to make predictions and provide local explanations.
 
+### 1.7 [Deployment of Automated Machine Learning Model](./aml-python-sdk/quickstart-1.7/README.md)
+
+In this quickstart, you will start with a model that was trained using Automated Machine Learning. Learn how to use the Azure ML Python SDK to register, package, and deploy the trained model to Azure Container Instance as a scoring web service. Finally, test the deployed model (1) by make direct calls on service object, (2) by calling the service end point (Scoring URI) over http.
+
 ## 2. Azure Machine Learning Visual Interface
 
 Azure Machine Learning Visual Interface gives you a cloud-based interactive, visual workspace that you can use to easily and quickly prep data, train and deploy machine learning models. It supports Azure Machine Learning compute, GPU or CPU. Machine Learning Visual Interface also supports publishing models as web services on Azure Kubernetes Service that can easily be consumed by other applications. To use Azure Machine Learning Studio, you do not need programming experience and this quickstart will walk you through an exercise that will show how to process training data, create a model, train, score, and evaluate the model and finally deploy the trained model as a web service.
