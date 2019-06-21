@@ -14,3 +14,13 @@ The [Azure Machine Learning Python SDK](https://docs.microsoft.com/en-us/python/
 # Quickstart Overview
 
 In this quickstart, you will start with a model that was trained using Automated Machine Learning. Learn how to use the Azure ML Python SDK to register, package, and deploy the trained model to Azure Container Instance as a scoring web service. Finally, test the deployed model (1) by make direct calls on service object, (2) by calling the service end point (Scoring URI) over http.
+
+## Before you begin
+
+Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0/azure-notebook-vm-setup) for Azure Notebook VMs before you begin.
+
+## Open Notebook for this Quickstart
+1. Within Azure Notebook VM's Jupyter Notebooks interface navigate to `quick-starts->azure-machine-learning-quickstarts->aml-python-sdk->starter-artifacts->nbvm-notebooks->07-aml-deployment`. 
+2. Open `deployment-with-AML.ipynb`. This is the Python notebook you will step thru executing in this lab.
+
+### Follow the instructions within the notebook to complete the lab
