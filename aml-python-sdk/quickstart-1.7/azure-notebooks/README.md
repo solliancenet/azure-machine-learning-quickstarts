@@ -1,21 +1,15 @@
 # Technology overview
 
-## Automated Machine Learning with Azure Machine Learning
+## Azure Machine Learning Python SDK
 
-Automated machine learning picks an algorithm and hyperparameters for you and generates a model ready for deployment. There are several options that you can use to configure automated machine learning experiments.
+The [Azure Machine Learning Python SDK](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/intro?view=azure-ml-py) provides a comprehensive set of a capabilities that you can use directly within a python notebook or python code including:
 
-Configuration options available in automated machine learning:
-
-- Select your experiment type: Classification, Regression or Time Series Forecasting
-- Data source, formats, and fetch data
-- Choose your compute target: local or remote
-- Automated machine learning experiment settings
-- Run an automated machine learning experiment
-- Explore model metrics
-- Register and deploy model
-
-You can create and run automated machine learning experiments in code using the [Azure ML Python SDK](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-configure-auto-train) or if you prefer a no code experience, you can also Create your automated machine learning experiments in the [Azure portal](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-create-portal-experiments).
-
+- Creating a **Workspace** that acts as the root object to organize all artifacts and resources used by Azure Machine Learning.
+- Creating **Experiments** in your Workspace that capture versions of the trained model along with any desired model performance telemetry. Each time you train a model and evaluate its results, you can capture that run (model and telemetry) within an Experiment.
+- Creating **Compute** resources that can be used to scale out model training, so that while your notebook may be running in a lightweight container in Azure Notebooks, your model training can actually occur on a powerful cluster that can provide large amounts of memory, CPU or GPU. 
+- Using **Automated Machine Learning (AutoML)** to automatically train multiple versions of a model using a mix of different ways to prepare the data and different algorithms and hyperparameters (algorithm settings) in search of the model that performs best according to a performance metric that you specify. 
+- Packaging a Docker **Image** that contains everything your trained model needs for scoring (prediction) in order to run as a web service.
+- Deploying your Image to either Azure Kubernetes or Azure Container Instances, effectively hosting the **Web Service**.
 
 # Quickstart Overview
 
