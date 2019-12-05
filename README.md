@@ -42,6 +42,6 @@ The goal of this quickstart is to show Model interpretability with Azure Machine
 
 In this quickstart, you will start with a model that was trained using Automated Machine Learning. Learn how to use the Azure ML Python SDK to register, package, and deploy the trained model to Azure Container Instance as a scoring web service. Finally, test the deployed model (1) by make direct calls on service object, (2) by calling the service end point (Scoring URI) over http.
 
-## 2. Azure Machine Learning Designer(./aml-visual-interface/README.md)
+## 2. [Azure Machine Learning Designer](./aml-visual-interface/README.md)
 
 Azure Machine Learning designer gives you a cloud-based interactive, visual workspace that you can use to easily and quickly prep data, train and deploy machine learning models. It supports Azure Machine Learning compute, GPU or CPU. Azure Machine Learning designer also supports publishing models as web services on Azure Kubernetes Service that can easily be consumed by other applications. To use Azure Machine Learning designer, you do not need programming experience and this quickstart will walk you through an exercise that will show how to process training data, create a model, train, score, and evaluate the model and finally deploy the trained model as a web service.
