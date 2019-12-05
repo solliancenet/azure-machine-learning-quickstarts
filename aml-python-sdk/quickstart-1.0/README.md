@@ -8,6 +8,7 @@ The quickstarts have the following requirements:
 - Azure subscription. You will need a valid and active Azure account to complete the quickstarts. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/en-us/free/).
 - An environment, which can by any of the following:
     - [Azure Notebooks](https://notebooks.azure.com/)
+    - [Azure Notebook VMs](https://azure.microsoft.com/en-us/services/machine-learning/)
     - [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
     
 The following sections describe the setup process for each environment.
