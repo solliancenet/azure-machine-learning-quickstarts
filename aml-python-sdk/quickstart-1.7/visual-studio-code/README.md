@@ -17,13 +17,13 @@ In this quickstart, you will start with a model that was trained using Automated
 
 ## Before you begin
 
-Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0) for Visual Studio Code before you begin.
+Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0/visual-studio-code-setup) for Visual Studio Code before you begin.
 
-### Open the starting Python file
+## Open Notebook for this Quickstart
 1. Start Visual Studio Code and open the folder: `07-aml-deployment`
-2. From within Visual Studio Code click on the starting python file: `deployment-with-AML.py`
+2. From within Visual Studio Code click on the starting python notebook: `deployment-with-AML.ipynb`
 3. Confirm that you have setup `azure_automl` as your interpreter.
-4. `deployment-with-AML.py` is the Python file you will step thru executing in this lab.
+4. `deployment-with-AML.ipynb` is the notebook file you will step thru executing in this lab.
 5. To execute each step click on `Run Cell` just above the block of code. 
 
-### Follow the instructions within the python file to complete the lab
+### Follow the instructions within the notebook file to complete the lab
