@@ -8,7 +8,7 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 3. Start the Notebook Server
 
-4. Update your Notebook Environment 
+4. Locate the Quickstart Notebook
 
 ## Task 1: Setup an Azure Notebooks account
 1. In your browser, navigate to https://notebooks.azure.com/.
@@ -37,12 +37,8 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 3. It should open **Jupyter Notebooks** interface.
 
-## Task 4: Update your Notebook Environment 
+## Task 4: Locate the Quickstart Notebooks 
 
 1.  Navigate to the `>aml-python-sdk->starter-artifacts->python-notebooks` folder where you will find all your quickstart files.
 
 	<img src="./images/setup_notebook/03.png" width="70%" height="70%" title="Navigate to the notebooks folder">
-
-2. Open notebook: **00-aml-setup/00-aml-setup.ipynb**
-
-3. Run each cell in the notebook to install the required libraries.
