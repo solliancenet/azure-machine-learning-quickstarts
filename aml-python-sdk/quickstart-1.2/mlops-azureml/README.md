@@ -181,9 +181,9 @@
 
     ![Open view stage tasks link](images/27.png)
     
-2. Select **Agent job** and change **Agent pool** to `Hosted Ubuntu 1604`
+2. Select **Agent job**. Change **Agent pool** to `Azure Pipelines`, and change **Agent Specification** to `ubuntu-16.04`
 
-    ![Change Agent pool to be Hosted Ubuntu 1604](images/28.png)
+    ![Change Agent specification to ubuntu-16.04](images/28.png)
     
 ## Task 5: Add Use Python Version task
 
