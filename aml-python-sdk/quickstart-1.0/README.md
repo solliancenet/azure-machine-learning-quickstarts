@@ -31,14 +31,13 @@ Compute-VM
 
 # Quickstart: Azure Notebooks
 
-1. Please follow the steps outlined in [Azure Notebooks Setup](./azure-notebooks-setup) before continuing. 
+1. Please follow the steps outlined in [Azure Notebooks Setup](./azure-notebooks-setup) before continuing.
 
 2. Once the setup is done, you can then follow the steps as outlined for each of other quickstarts.
 
-
 # Quickstart: Azure Notebook VMs
 
-1. Please follow the steps outlined in [Azure Notebook VM Setup](./azure-notebook-vm-setup) before continuing. 
+1. Please follow the steps outlined in [Azure Notebook VM Setup](./azure-notebook-vm-setup) before continuing.
 
 2. Once the setup is done, you can then follow the steps as outlined for each of other quickstarts.
 
@@ -49,7 +48,7 @@ Compute-VM
 
 2. Install the latest version of [Anaconda](https://www.anaconda.com/distribution/).
 
-3. Setup a new conda environment for Azure Auto ML. The easiest way to do that is to download the automl_setup script for your machine (Windows-automl_setup.cmd, Linux-automl_setup_linux.sh, Mac-automl_setup_mac.sh) and the common automl_env.yml file from the following [GitHub repository](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning). Open command prompt or terminal and go to the directory where the two files are saved and run the script file. The script will creates a new conda environment called `azure_automl`, and installs the necessary packages.
+3. Setup a new conda environment for Azure Auto ML. The easiest way to do that is to download the automl_setup script for your machine (Windows-automl_setup.cmd, Linux-automl_setup_linux.sh, Mac-automl_setup_mac.sh) and the YAML file (Windows-automl_env.yml, Linux-automl_env.yml, Mac-automl_env_mac.yml) from the following [GitHub repository](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning). Open command prompt or terminal and go to the directory where the two files are saved and run the script file. The script will creates a new conda environment called `azure_automl`, and installs the necessary packages.
 
 4. From starter-artifacts navigate to the [visual-studio-code](../starter-artifacts/visual-studio-code) and download the project files to your local computer. Also remember to maintain the folder structure as shown in `starter-artifacts/visual-studio-code`, so that each quickstart’s starting python file is in its own folder. During the quickstarts , other files will be either downloaded or created, thus maintaining the folder structure will help keeping the files within their respective quickstart folders. 
 
