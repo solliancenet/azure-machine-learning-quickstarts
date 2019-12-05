@@ -24,7 +24,7 @@ Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.
 ## Update your environment
 1. Within Azure Notebook VM's Jupyter Notebooks interface navigate to `quick-starts->azure-machine-learning-quickstarts->aml-python-sdk->starter-artifacts->nbvm-notebooks->05-aml-onnx`.
 2. Open `update_env.ipynb`.
-3. Step thru `update_env.ipynb` notebook first before opening the main quickstart notebook.
+3. Step thru `update_env.ipynb` notebook first before opening the main notebook.
 
 ## Open Notebook for this Quickstart
 1. Within Azure Notebook VM's Jupyter Notebooks interface navigate to `quick-starts->azure-machine-learning-quickstarts->aml-python-sdk->starter-artifacts->nbvm-notebooks->05-aml-onnx`. 
