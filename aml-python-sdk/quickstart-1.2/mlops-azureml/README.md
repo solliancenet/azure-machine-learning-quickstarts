@@ -53,11 +53,11 @@
   
 ## Task 4: Create new Service Connection
 
-1. From the left navigation select **Project settings** and then select **Service connections**
+1. From the left navigation select **Project settings** and then select **Service connections, Create service connection**
 
     ![Open Service connections](images/07.png)
 
-2. Select **New service connection** and then select **Azure Resource Manager**
+2. In the `New service connection` dialog select **Azure Resource Manager, Next**
 
     ![Open Azure Resource Manager](images/08.png)
 
@@ -68,6 +68,8 @@
    b. Subscription: Select the Azure subscription to use
    
    c. Resource Group: This value should match the value you provided in the `azure-pipelines.yml` file
+   
+   d. Select **Allow all pipelines to use this connection.**
    
     ![Add an Azure Resource Manager service connection](images/09.png)
 
