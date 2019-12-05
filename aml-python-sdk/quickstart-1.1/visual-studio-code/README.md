@@ -34,7 +34,7 @@ Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.
 
 ## Open Notebook for this Quickstart
 1. Start Visual Studio Code and open the folder: `01-aml-pipelines`
-2. From within Visual Studio Code click on the starting python notebook: `pipelines-AML.ipynb`.
+2. From within Visual Studio Code click on the starting python notebook: `pipelines-AML.ipynb`
 3. Confirm that you have setup `azure_automl` as your interpreter.
 4. `pipelines-AML.ipynb` is the notebook file you will step thru executing in this lab.
 5. To execute each step click on `Run Cell` just above the block of code.
