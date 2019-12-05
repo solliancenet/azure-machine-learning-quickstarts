@@ -165,7 +165,7 @@
 
     ![Open variables tab](images/25.png)
 
-3. Add three Pipeline variables as name - value pairs and then select **Save**:
+3. Add three Pipeline variables as name - value pairs:
 
     a. Name: `aci_name` Value: `aci-cluster01`
     
