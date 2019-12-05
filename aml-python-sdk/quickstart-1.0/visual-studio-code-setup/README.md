@@ -10,4 +10,4 @@
 
 5. When you are ready to start a quickstart: (1) start Visual Stuido Code, (2) go to File->Open Menu, and (3) open the **folder** for the quick start. For example, to work on `quickstart-1.1`, open the folder `01-aml-pipelines` from Visual Studio Code. This will ensure that the current working directory for the quickstart is set correctly.  
 
-6. In VS code, when you open a python noteboook for the first time, use Select Interpreter command from the Command Palette (⇧⌘P) and select the azure_automl as your interpreter.
+6. In VS code, when you open a python notebook for the first time, use Select Interpreter command from the Command Palette (⇧⌘P) and select the azure_automl as your interpreter.
