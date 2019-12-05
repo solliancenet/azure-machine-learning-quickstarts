@@ -17,6 +17,11 @@ The primary goal of this quickstart is to explain the predictions made by our tr
 
 Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0/azure-notebooks-setup) for Azure Notebooks before you begin.
 
+## Update your environment
+1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->06-aml-interpretability`.
+2. Open `update_env.ipynb`.
+3. Step thru `update_env.ipynb` notebook first before opening the main notebook.
+
 ## Open Notebook for this Quickstart
 1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->06-aml-interpretability`. 
 2. Open `interpretability-with-AML.ipynb`. This is the Python notebook you will step thru executing in this quickstart.
