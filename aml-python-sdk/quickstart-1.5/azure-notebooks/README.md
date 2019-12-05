@@ -21,8 +21,13 @@ In this quickstart, you will take a previously trained deep learning model to cl
 
 Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.0/azure-notebooks-setup) for Azure Notebooks before you begin.
 
+## Update your environment
+1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->05-aml-onnx`.
+2. Open `update_env.ipynb`.
+3. Step thru `update_env.ipynb` notebook first before opening the main quickstart notebook.
+
 ## Open Notebook for this Quickstart
-1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->05-aml-onnx`. 
+1. Within Azure Notebooks navigate to `aml-python-sdk->starter-artifacts->python-notebooks->05-aml-onnx`.
 2. Open `onnx-AML.ipynb`. This is the Python notebook you will step thru executing in this quickstart.
 
 ### Follow the instructions within the notebook to complete the quickstart
