@@ -34,4 +34,4 @@ Confirm that you have completed quickstart: [quickstart-1.0](../../quickstart-1.
 4. `onnx-AML.ipynb` is the notebook file you will step thru executing in this lab.
 5. To execute each step click on `Run Cell` just above the block of code.
 
-## Follow the instructions within the python file to complete the quickstart
+## Follow the instructions within the notebook file to complete the quickstart
